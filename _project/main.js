@@ -28,7 +28,9 @@ Metalsmith(__dirname)
   .use(layouts({
     default: 'default.hbs'
   }))
-  .use(permalinks())
+  .use(permalinks({
+    pattern: ':title'
+  }))
   .build(function (err) {      // build process
     if (err) throw err;       // error handling is required
   });

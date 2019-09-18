@@ -1,5 +1,6 @@
 ---
 title: Home Page
+permalink: false
 ---
 
 # Hello, world
