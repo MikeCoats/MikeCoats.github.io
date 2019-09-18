@@ -4,7 +4,7 @@
   "description": "",
   "main": "_project/main.js",
   "scripts": {
-    "prestart": "rm -rf $(find . -maxdepth 1  ! -name . ! -name .git ! -name node_modules ! -name package.json ! -name package-lock.json ! -name _project)",
+    "prestart": "rm -rf $(find . -maxdepth 1  ! -name . ! -name .git ! -name .gitignore ! -name node_modules ! -name package.json ! -name package-lock.json ! -name _project)",
     "start": "node _project/main.js",
     "dev": "./node_modules/.bin/http-server"
   },
