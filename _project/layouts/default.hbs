@@ -40,20 +40,29 @@
       font-size: 1.25rem;
       line-height: 1.925rem;
     }
+  pre > code {
+    font-size: 0.9rem;
+  }
+
+    img, table, pre {
+      background: white;
+      border: 1px solid black;
+    }
 
     @media (max-width: 109.99ch) {
-      img {
+      img, table, pre {
         max-width: 100%;
       }
     }
 
     @media (min-width: 110ch) {
-      img {
+      img, table, pre {
         margin-left: -10ch;
         width: 80ch;
       }
     }
   </style>
+  <link rel="stylesheet" href="/css/highlight.min.css">
 </head>
 
 <body>

@@ -5,6 +5,7 @@ const markdown = require('metalsmith-markdown');
 const discoverPartials = require('metalsmith-discover-partials')
 const layouts = require('metalsmith-layouts');
 const permalinks = require('metalsmith-permalinks');
+const metallic = require('metalsmith-metallic');
 
 Metalsmith(__dirname)
   .metadata({
@@ -21,6 +22,7 @@ Metalsmith(__dirname)
   .use(collections({          // group all blog posts by internally
     posts: 'posts/*.md'       // adding key 'collections':'posts'
   }))                         // use `collections.posts` in layouts
+  .use(metallic())
   .use(markdown())            // transpile all md into html
   .use(discoverPartials({
     directory: 'layouts/partials'

@@ -31,6 +31,69 @@ Qty    | Item                    | Source         | Cost
 
 ## Arduino Sketch Source Code
 
+```c++
+/*
+IntruderAlert
+
+Intruders better beware!
+
+Every time the value from the ultrasonic range finder drops below the
+potentiometer's threshold value, an alarm is triggered. In this case the alarm
+is an LED, but it could easily be a buzzer. If your Arduino is connected to a
+PC then you can also use the serial monitor to read the debug information of
+the two analogue devices.
+
+This work is licensed under the Creative Commons Attribution-ShareAlike 2.5 UK:
+Scotland License. To view a copy of this license, visit
+http://creativecommons.org/licenses/by-sa/2.5/scotland/ or send a letter to
+Creative Commons, 444 Castro Street, Suite 900, Mountain View, California,
+94041, USA.
+
+Copyright 2013, Mike Coats
+http://mikecoats.com/IntruderAlert/
+i.am@mikecoats.com
+*/
+
+int LedPin = 8;
+
+void setup() {
+  // Initialise the serial port for debugging.
+  Serial.begin(9600);
+
+  // Set up the "alarm" pin.
+  pinMode(LedPin,OUTPUT);
+}
+
+void loop() {
+  // Grab the value from the ultrasonic range finder.
+  int sonarValue = analogRead(A0);
+
+  // Grab the value from the calibraiton potentiometer.
+  int resValue = analogRead(A1);
+
+  // Output the debugging message.
+  Serial.print(sonarValue);
+  Serial.print(" - ");
+  Serial.println(resValue);
+  
+  // If the sensor's value indicates that an object is "closer" than the
+  //calibration threshold.
+  if(sonarValue < resValue)
+  {
+    // Turn the "alarm" to on.
+    digitalWrite(LedPin,HIGH);
+  }
+  else
+  {
+    // Turn off the "alarm".
+    digitalWrite(LedPin,LOW);
+  }
+  
+  // Hang on for a bit, running the whole loop 8 times a second.
+  delay(125);
+}
+```
+
 [https://gist.github.com/MikeCoats/df5969b87f739aaefda892576a22bb75](https://gist.github.com/MikeCoats/df5969b87f739aaefda892576a22bb75)
 
 ## Fritzing Schematic
