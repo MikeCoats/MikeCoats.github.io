@@ -2,7 +2,7 @@
 <html>
 
 <head>
-  <title>Home Page</title>
+  <title>{{ title }}</title>
   <style>
     html {
       font-size: 19px;
@@ -58,16 +58,8 @@
 
 <body>
   <article>
-    <nav>
-        <ul>
-            <li><a href="/">Home</a></li>
-        </ul>
-    </nav>
-    <h1 id="hello-world">Hello, world</h1>
-<p>This is a paragraph of text that is only here to pad out the page.</p>
-<h2 id="a-second-section">A second section</h2>
-<p>This section exists for some reason.</p>
-
+    {{>nav}}
+    {{{contents}}}
   </article>
 </body>
 
