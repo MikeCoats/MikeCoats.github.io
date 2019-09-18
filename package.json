@@ -1,0 +1,29 @@
+{
+  "name": "mikecoats.github.io",
+  "version": "2019.09.15",
+  "description": "",
+  "main": "_project/main.js",
+  "scripts": {
+    "prestart": "rm -rf $(find . -maxdepth 1  ! -name . ! -name .git ! -name node_modules ! -name package.json ! -name package-lock.json ! -name _project)",
+    "start": "node _project/main.js",
+    "dev": "./node_modules/.bin/http-server"
+  },
+  "repository": "github:MikeCoats/mikecoats.github.io.git",
+  "author": "Mike Coats <i.am@mikecoats.com>",
+  "license": "(MPL-2.0 OR CC-BY-SA-4.0)",
+  "bugs": "https://github.com/MikeCoats/mikecoats.github.io/issues",
+  "homepage": "https://github.com/MikeCoats/mikecoats.github.io#readme",
+  "dependencies": {
+    "jstransformer-handlebars": "^1.1.0",
+    "metalsmith": "^2.3.0",
+    "metalsmith-collections": "^0.9.0",
+    "metalsmith-discover-partials": "^0.1.2",
+    "metalsmith-drafts": "^0.1.0",
+    "metalsmith-layouts": "^2.3.1",
+    "metalsmith-markdown": "^1.2.0",
+    "metalsmith-permalinks": "^2.2.0"
+  },
+  "devDependencies": {
+    "http-server": "^0.11.1"
+  }
+}
