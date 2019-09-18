@@ -1,0 +1,134 @@
+<!doctype html>
+<html>
+
+<head>
+  <title>Intruder Alert</title>
+  <style>
+    html {
+      font-size: 19px;
+      line-height: 32px;
+      font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+      background: #f8f8f8;
+      color: #444;
+    }
+
+    article {
+      max-width: 60ch;
+      margin-left: auto;
+      margin-right: auto;
+      text-align: justify;
+      hyphens: auto;
+    }
+
+    h1,
+    h2,
+    h3 {
+      font-variant-caps: small-caps;
+    }
+
+    h1 {
+      font-size: 2rem;
+      line-height: 3.08rem;
+    }
+
+    h2 {
+      font-size: 1.5rem;
+      line-height: 2.31rem;
+    }
+
+    h3 {
+      font-size: 1.25rem;
+      line-height: 1.925rem;
+    }
+
+    @media (max-width: 109.99ch) {
+      img {
+        max-width: 100%;
+      }
+    }
+
+    @media (min-width: 110ch) {
+      img {
+        margin-left: -10ch;
+        width: 80ch;
+      }
+    }
+  </style>
+</head>
+
+<body>
+  <article>
+    <nav>
+        <ul>
+            <li><a href="/">Home</a></li>
+        </ul>
+    </nav>
+    <h1 id="intruder-alert">Intruder Alert</h1>
+<p>For a quick lunch-time electronics project, I’ve constructed an intruder alarm that can alert you any time somebody comes too close to your desk or cubicle. This project took me 45 minutes from start to finish including all coding, wiring and testing so—provided you’ve already got your lunch and eat it quickly—you too can be alerted to approaching co-workers before your lunch hour is up.</p>
+<p><img src="2013-09-05--intruder-alert--photo.jpg" alt="Photograph of completed Intruder Alert project"></p>
+<p>Using an Arduino for this project is overkill, as we could easily accomplish the same result without using a micro-controller at all, but it is a good introduction to using analogue electronics with the board.</p>
+<p>In this project I’ve connected an ultrasonic range finder, a potentiometer and an LED to an Arduino to form a basic intruder alarm. The potentiometer acts as a threshold so you can easily tune the performance of the ultrasonic range finder to your local environment.</p>
+<p>Very simply, every time the value from the ultrasonic range finder drops below the potentiometer’s threshold value, an alarm is triggered. In this case the alarm is an LED, but it could easily—if you wanted to annoy your cubicle neighbours—be something like a buzzer. If your Arduino is connected to a PC, you can also use the serial monitor to read the debug information of the two analogue devices.</p>
+<p>This isn’t really a tutorial on how to use an Arduino but more of an example of what can be quickly accomplished by connecting a few simple components together and throwing a wee bit of code at a problem. If you want to build your own—or just look closer at how I built mine—keep reading for a BOM,  Source Code and Schematic.</p>
+<h2 id="bill-of-materials">Bill of Materials</h2>
+<table>
+<thead>
+<tr>
+<th>Qty</th>
+<th>Item</th>
+<th>Source</th>
+<th>Cost</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>1 no.</td>
+<td>Arduino Uno - R3</td>
+<td>CoolComponents</td>
+<td>£19.98</td>
+</tr>
+<tr>
+<td>1 no.</td>
+<td>Ultrasonic Range Finder</td>
+<td>CoolComponents</td>
+<td>£24.48</td>
+</tr>
+<tr>
+<td>1 no.</td>
+<td>10 kΩ Linear Pot</td>
+<td>CoolComponents</td>
+<td>£ 1.44</td>
+</tr>
+<tr>
+<td>1 no.</td>
+<td>5mm Red LED</td>
+<td>CoolComponents</td>
+<td>£ 0.40</td>
+</tr>
+<tr>
+<td>1 no.</td>
+<td>220Ω Resistor</td>
+<td>CoolComponents</td>
+<td>£ 0.06</td>
+</tr>
+<tr>
+<td>12 no.</td>
+<td>Jumper Wires</td>
+<td>CoolComponents</td>
+<td>£ 3.59</td>
+</tr>
+<tr>
+<td>2 no.</td>
+<td>Mini Bread-board</td>
+<td>CoolComponents</td>
+<td>£ 1.44</td>
+</tr>
+</tbody></table>
+<h2 id="arduino-sketch-source-code">Arduino Sketch Source Code</h2>
+<p><a href="https://gist.github.com/MikeCoats/df5969b87f739aaefda892576a22bb75">https://gist.github.com/MikeCoats/df5969b87f739aaefda892576a22bb75</a></p>
+<h2 id="fritzing-schematic">Fritzing Schematic</h2>
+<p><img src="2013-09-05--intruder-alert--fritzing.png" alt="Fritzing Schematic of Intruder Alert"></p>
+
+  </article>
+</body>
+
+</html>
