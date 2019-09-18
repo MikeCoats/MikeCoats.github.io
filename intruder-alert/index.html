@@ -40,20 +40,29 @@
       font-size: 1.25rem;
       line-height: 1.925rem;
     }
+  pre > code {
+    font-size: 0.9rem;
+  }
+
+    img, table, pre {
+      background: white;
+      border: 1px solid black;
+    }
 
     @media (max-width: 109.99ch) {
-      img {
+      img, table, pre {
         max-width: 100%;
       }
     }
 
     @media (min-width: 110ch) {
-      img {
+      img, table, pre {
         margin-left: -10ch;
         width: 80ch;
       }
     }
   </style>
+  <link rel="stylesheet" href="/css/highlight.min.css">
 </head>
 
 <body>
@@ -124,6 +133,67 @@
 </tr>
 </tbody></table>
 <h2 id="arduino-sketch-source-code">Arduino Sketch Source Code</h2>
+<pre><code class="hljs c++"><span class="hljs-comment">/*
+IntruderAlert
+
+Intruders better beware!
+
+Every time the value from the ultrasonic range finder drops below the
+potentiometer's threshold value, an alarm is triggered. In this case the alarm
+is an LED, but it could easily be a buzzer. If your Arduino is connected to a
+PC then you can also use the serial monitor to read the debug information of
+the two analogue devices.
+
+This work is licensed under the Creative Commons Attribution-ShareAlike 2.5 UK:
+Scotland License. To view a copy of this license, visit
+http://creativecommons.org/licenses/by-sa/2.5/scotland/ or send a letter to
+Creative Commons, 444 Castro Street, Suite 900, Mountain View, California,
+94041, USA.
+
+Copyright 2013, Mike Coats
+http://mikecoats.com/IntruderAlert/
+i.am@mikecoats.com
+*/</span>
+
+<span class="hljs-keyword">int</span> LedPin = <span class="hljs-number">8</span>;
+
+<span class="hljs-function"><span class="hljs-keyword">void</span> <span class="hljs-title">setup</span><span class="hljs-params">()</span> </span>{
+  <span class="hljs-comment">// Initialise the serial port for debugging.</span>
+  Serial.begin(<span class="hljs-number">9600</span>);
+
+  <span class="hljs-comment">// Set up the "alarm" pin.</span>
+  pinMode(LedPin,OUTPUT);
+}
+
+<span class="hljs-function"><span class="hljs-keyword">void</span> <span class="hljs-title">loop</span><span class="hljs-params">()</span> </span>{
+  <span class="hljs-comment">// Grab the value from the ultrasonic range finder.</span>
+  <span class="hljs-keyword">int</span> sonarValue = analogRead(A0);
+
+  <span class="hljs-comment">// Grab the value from the calibraiton potentiometer.</span>
+  <span class="hljs-keyword">int</span> resValue = analogRead(A1);
+
+  <span class="hljs-comment">// Output the debugging message.</span>
+  Serial.print(sonarValue);
+  Serial.print(<span class="hljs-string">" - "</span>);
+  Serial.println(resValue);
+
+  <span class="hljs-comment">// If the sensor's value indicates that an object is "closer" than the</span>
+  <span class="hljs-comment">//calibration threshold.</span>
+  <span class="hljs-keyword">if</span>(sonarValue &lt; resValue)
+  {
+    <span class="hljs-comment">// Turn the "alarm" to on.</span>
+    digitalWrite(LedPin,HIGH);
+  }
+  <span class="hljs-keyword">else</span>
+  {
+    <span class="hljs-comment">// Turn off the "alarm".</span>
+    digitalWrite(LedPin,LOW);
+  }
+
+  <span class="hljs-comment">// Hang on for a bit, running the whole loop 8 times a second.</span>
+  delay(<span class="hljs-number">125</span>);
+}</code></pre>
+
 <p><a href="https://gist.github.com/MikeCoats/df5969b87f739aaefda892576a22bb75">https://gist.github.com/MikeCoats/df5969b87f739aaefda892576a22bb75</a></p>
 <h2 id="fritzing-schematic">Fritzing Schematic</h2>
 <p><img src="2013-09-05--intruder-alert--fritzing.png" alt="Fritzing Schematic of Intruder Alert"></p>
