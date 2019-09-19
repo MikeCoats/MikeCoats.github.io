@@ -2,10 +2,10 @@
   "name": "mikecoats.github.io",
   "version": "2019.09.15",
   "description": "",
-  "main": "_project/main.js",
+  "main": "main.js",
   "scripts": {
-    "prestart": "rm -rf $(find . -maxdepth 1  ! -name . ! -name .git ! -name .gitignore ! -name node_modules ! -name package.json ! -name package-lock.json ! -name _project)",
-    "start": "node _project/main.js",
+    "prestart": "rm -rf $(find .. -maxdepth 1  ! -name .. ! -name .git ! -name .gitignore  ! -name _project)",
+    "start": "node main.js",
     "dev": "./node_modules/.bin/http-server"
   },
   "repository": "github:MikeCoats/mikecoats.github.io.git",
