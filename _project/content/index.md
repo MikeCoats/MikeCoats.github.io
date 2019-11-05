@@ -1,6 +1,7 @@
 ---
 title: Home Page
 permalink: false
+layout: home.hbs
 ---
 
 # Hello, world

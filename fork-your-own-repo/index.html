@@ -1,0 +1,133 @@
+<!doctype html>
+<html>
+
+<head>
+  <title>Fork Your Own Repo</title>
+  <style>
+      html {
+          font-size: 19px;
+          line-height: 32px;
+          font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+          background: #f8f8f8;
+          color: #444;
+      }
+  
+      article {
+          max-width: 60ch;
+          margin-left: auto;
+          margin-right: auto;
+          text-align: justify;
+          hyphens: auto;
+      }
+  
+      h1,
+      h2,
+      h3 {
+          font-variant-caps: small-caps;
+      }
+  
+      h1 {
+          font-size: 2rem;
+          line-height: 3.08rem;
+      }
+  
+      h2 {
+          font-size: 1.5rem;
+          line-height: 2.31rem;
+      }
+  
+      h3 {
+          font-size: 1.25rem;
+          line-height: 1.925rem;
+      }
+  
+      pre>code {
+          font-size: 0.9rem;
+      }
+  
+      img,
+      table,
+      pre {
+          background: white;
+          border: 1px solid black;
+      }
+  
+      @media (max-width: 109.99ch) {
+  
+          img,
+          table,
+          pre {
+              max-width: 100%;
+          }
+      }
+  
+      @media (min-width: 110ch) {
+  
+          img,
+          table,
+          pre {
+              margin-left: -10ch;
+              width: 80ch;
+          }
+      }
+  </style>
+  <link rel="stylesheet" href="/css/highlight.min.css"></head>
+
+<body>
+  <article>
+    <nav>
+        <ul>
+            <li><a href="/">Home</a></li>
+        </ul>
+    </nav>
+    <h1 id="fork-your-own-repo-on-github">Fork Your Own Repo on GitHub</h1>
+<p>A common time-saving &#39;hack&#39; of mine when building &#39;new-but-related-to-old&#39; projects is to fork an existing code base and use it as the boot-strap for the new project. GitHub, however, does not provide the functionality on their website to fork your own project; you can only fork other people&#39;s projects. Here&#39;s how to work around that.</p>
+<ul>
+<li>Create the <a href="https://github.com/new">new destination project on GitHub</a>.</li>
+</ul>
+<p><img src="2017-07-04--fork-your-own-repo--new-repo.png" alt="Create a new repository"></p>
+<ul>
+<li>Create a new directory on your local computer to hold the new repository.</li>
+</ul>
+<pre><code class="hljs bash">~$ mkdir <span class="hljs-built_in">test</span>-project-2
+
+~$ <span class="hljs-built_in">cd</span> <span class="hljs-built_in">test</span>-project-2
+
+~/<span class="hljs-built_in">test</span>-project-2$ git init .
+Initialized empty Git repository <span class="hljs-keyword">in</span> /home/mike/<span class="hljs-built_in">test</span>-project-2/.git/</code></pre>
+
+<ul>
+<li>Add the new project as the origin remote and the old project as the upstream remote.</li>
+</ul>
+<pre><code class="hljs bash">~/<span class="hljs-built_in">test</span>-project-2$ git remote add origin https://github.com/MikeCoats/<span class="hljs-built_in">test</span>-project-2.git
+
+~/<span class="hljs-built_in">test</span>-project-2$ git remote add upstream https://github.com/MikeCoats/<span class="hljs-built_in">test</span>-project-1.git</code></pre>
+
+<ul>
+<li>Pull the code from the upstream project and push it to the origin project.</li>
+</ul>
+<pre><code class="hljs bash">~/<span class="hljs-built_in">test</span>-project-2 $ git pull upstream master
+remote: Enumerating objects: 3, done.remote: Counting objects: 100% (3/3), <span class="hljs-keyword">done</span>.
+remote: Total 3 (delta 0), reused 3 (delta 0), pack-reused 0
+Unpacking objects: 100% (3/3), <span class="hljs-keyword">done</span>.
+From https://github.com/MikeCoats/<span class="hljs-built_in">test</span>-project-1
+ * branch            master     -&gt; FETCH_HEAD
+ * [new branch]      master     -&gt; upstream/master
+
+~/<span class="hljs-built_in">test</span>-project-2 $ git push origin master
+Enumerating objects: 3, <span class="hljs-keyword">done</span>.
+Counting objects: 100% (3/3), <span class="hljs-keyword">done</span>.
+Writing objects: 100% (3/3), 881 bytes | 881.00 KiB/s, <span class="hljs-keyword">done</span>.
+Total 3 (delta 0), reused 0 (delta 0)
+To https://github.com/MikeCoats/<span class="hljs-built_in">test</span>-project-2.git
+ * [new branch]      master -&gt; master</code></pre>
+
+<p>Congratulations! You&#39;ve successfuly forked your own repo on GitHub!</p>
+<h2 id="discussion">Discussion</h2>
+<p>If you want to leave a comment or discuss this post, please reply to my tweet below!</p>
+<p><a href="https://twitter.com/MikeCoatsDotCom/status/882360457864065024">@MikeCoatsDotCom/882360457864065024</a></p>
+
+  </article>
+</body>
+
+</html>

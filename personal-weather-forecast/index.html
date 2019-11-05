@@ -1,0 +1,120 @@
+<!doctype html>
+<html>
+
+<head>
+  <title>Personal Weather Forecast</title>
+  <style>
+      html {
+          font-size: 19px;
+          line-height: 32px;
+          font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+          background: #f8f8f8;
+          color: #444;
+      }
+  
+      article {
+          max-width: 60ch;
+          margin-left: auto;
+          margin-right: auto;
+          text-align: justify;
+          hyphens: auto;
+      }
+  
+      h1,
+      h2,
+      h3 {
+          font-variant-caps: small-caps;
+      }
+  
+      h1 {
+          font-size: 2rem;
+          line-height: 3.08rem;
+      }
+  
+      h2 {
+          font-size: 1.5rem;
+          line-height: 2.31rem;
+      }
+  
+      h3 {
+          font-size: 1.25rem;
+          line-height: 1.925rem;
+      }
+  
+      pre>code {
+          font-size: 0.9rem;
+      }
+  
+      img,
+      table,
+      pre {
+          background: white;
+          border: 1px solid black;
+      }
+  
+      @media (max-width: 109.99ch) {
+  
+          img,
+          table,
+          pre {
+              max-width: 100%;
+          }
+      }
+  
+      @media (min-width: 110ch) {
+  
+          img,
+          table,
+          pre {
+              margin-left: -10ch;
+              width: 80ch;
+          }
+      }
+  </style>
+  <link rel="stylesheet" href="/css/highlight.min.css"></head>
+
+<body>
+  <article>
+    <nav>
+        <ul>
+            <li><a href="/">Home</a></li>
+        </ul>
+    </nav>
+    <h1 id="personal-weather-forecast">Personal Weather Forecast</h1>
+<p>tl;dr Personal Weather Forecast is a small JavaScript program that mashes together Dark Sky&#39;s API with Twilio&#39;s APIs to produce a personally tailored weather forecast and sends it to you as a text message every morning. The source code is available as <a href="https://github.com/MikeCoats/personal-weather-forecast">a project on GitHub, here</a>.</p>
+<p><img src="2018-12-29--personal-weather-forecast--notification.jpg" alt="Screenshot of an example notification"></p>
+<p>If you want to receive your own personal weather forecast every morning...</p>
+<ul>
+<li>check out the repository to a computer you&#39;ll leave switched on—such as a DigitalOcean droplet, or a Raspberry Pi home server</li>
+<li>create a script similar to the one below</li>
+<li>save it somewhere accessible from your logged-in user on your server, such as <code>~/bin/forecast-sms</code>.</li>
+</ul>
+<pre><code class="hljs sh"><span class="hljs-meta">#!/bin/sh
+</span>
+<span class="hljs-built_in">export</span> DARKSKY_KEY=[your-darksky-key]
+<span class="hljs-built_in">export</span> DARKSKY_LATLONG=[the-location-for-the-forecast]
+<span class="hljs-built_in">export</span> TWILIO_ACCOUNT=[your-twilio-account-sid]
+<span class="hljs-built_in">export</span> TWILIO_TOKEN=[your-twilio-auth-token]
+<span class="hljs-built_in">export</span> TWILIO_FROM=[your-twilio-phone-number]
+<span class="hljs-built_in">export</span> TWILIO_TO=[your-destination-phone-number]
+
+<span class="hljs-built_in">pushd</span> /[repo-location]/personal-weather-forecast &gt;/dev/null
+node main.js
+<span class="hljs-built_in">popd</span> &gt;/dev/null</code></pre>
+
+<p>To make it run every morning, you should edit your user&#39;s crontab which with the following command...</p>
+<pre><code class="hljs sh">$ crontab -e</code></pre>
+
+<p>...and add the following line...</p>
+<pre><code class="hljs"><span class="hljs-symbol">0 </span><span class="hljs-number">7</span> * * <span class="hljs-number">1</span>-<span class="hljs-number">5</span> ~/bin/forecast-sms</code></pre>
+
+<p>...which references the location of the previously saved script. This cron entry means that every Monday to Friday morning at 7am you&#39;ll receive your very own personal weather forecast!</p>
+<p><img src="2018-12-29--personal-weather-forecast--message.jpg" alt="Screenshot of an example message"></p>
+<h2 id="discussion">Discussion</h2>
+<p>If you want to leave a comment or discuss this post, please reply to my tweet below!</p>
+<p><a href="https://twitter.com/MikeCoatsDotCom/status/1052832221684477952">@MikeCoatsDotCom/1052832221684477952</a></p>
+
+  </article>
+</body>
+
+</html>

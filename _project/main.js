@@ -6,6 +6,7 @@ const discoverPartials = require('metalsmith-discover-partials')
 const layouts = require('metalsmith-layouts');
 const permalinks = require('metalsmith-permalinks');
 const metallic = require('metalsmith-metallic');
+const registerHelpers = require('metalsmith-register-helpers');
 
 Metalsmith(__dirname)
   .metadata({
@@ -24,14 +25,17 @@ Metalsmith(__dirname)
   }))                         // use `collections.posts` in layouts
   .use(metallic())
   .use(markdown())            // transpile all md into html
+  .use(permalinks({
+    pattern: ':title'
+  }))
   .use(discoverPartials({
     directory: 'layouts/partials'
   }))
+  .use(registerHelpers({
+    directory: 'layouts/helpers'
+  }))
   .use(layouts({
     default: 'default.hbs'
-  }))
-  .use(permalinks({
-    pattern: ':title'
   }))
   .build(function (err) {      // build process
     if (err) throw err;       // error handling is required

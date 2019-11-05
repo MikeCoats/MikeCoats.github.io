@@ -6,7 +6,7 @@
   "scripts": {
     "prestart": "rm -rf $(find .. -maxdepth 1  ! -name .. ! -name .git ! -name .gitignore  ! -name _project)",
     "start": "node main.js",
-    "dev": "./node_modules/.bin/http-server"
+    "dev": "./node_modules/.bin/http-server .."
   },
   "repository": "github:MikeCoats/mikecoats.github.io.git",
   "author": "Mike Coats <i.am@mikecoats.com>",
@@ -22,7 +22,8 @@
     "metalsmith-layouts": "^2.3.1",
     "metalsmith-markdown": "^1.2.0",
     "metalsmith-metallic": "^2.0.3",
-    "metalsmith-permalinks": "^2.2.0"
+    "metalsmith-permalinks": "^2.2.0",
+    "metalsmith-register-helpers": "^0.4.0"
   },
   "devDependencies": {
     "http-server": "^0.9.0"
