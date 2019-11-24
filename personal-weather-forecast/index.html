@@ -12,12 +12,32 @@
           color: #444;
       }
   
-      article {
+      article, nav {
           max-width: 60ch;
           margin-left: auto;
           margin-right: auto;
           text-align: justify;
           hyphens: auto;
+      }
+  
+      nav {
+          display: grid;
+          grid-template-columns: 1fr 1fr 1fr;
+      }
+      .next {
+          grid-column: 1;
+          grid-row: 1;
+          text-align: left;
+      }
+      .home {
+          grid-column: 2;
+          grid-row: 1;
+          text-align: center;
+      }
+      .previous {
+          grid-column: 3;
+          grid-row: 1;
+          text-align: right;
       }
   
       h1,
@@ -43,6 +63,10 @@
   
       pre>code {
           font-size: 0.9rem;
+      }
+  
+      pre {
+          padding:0.75rem;
       }
   
       img,
@@ -74,12 +98,12 @@
   <link rel="stylesheet" href="/css/highlight.min.css"></head>
 
 <body>
+  <nav>
+    <a class="next" href="/snh-missing-maps-mapathon" title="SNH Missing Maps Mapathon">&#x21D0; Next</a>
+    <a class="previous" href="/trump-is-big-boss" title="Trump is Big Boss">Previous &#x21D2;</a>
+    <header class="home"><a href="/">MikeCoats.com</a></header>
+  </nav>
   <article>
-    <nav>
-        <ul>
-            <li><a href="/">Home</a></li>
-        </ul>
-    </nav>
     <h1 id="personal-weather-forecast">Personal Weather Forecast</h1>
 <p>tl;dr Personal Weather Forecast is a small JavaScript program that mashes together Dark Sky&#39;s API with Twilio&#39;s APIs to produce a personally tailored weather forecast and sends it to you as a text message every morning. The source code is available as <a href="https://github.com/MikeCoats/personal-weather-forecast">a project on GitHub, here</a>.</p>
 <p><img src="2018-12-29--personal-weather-forecast--notification.jpg" alt="Screenshot of an example notification"></p>
@@ -115,6 +139,11 @@ node main.js
 <p><a href="https://twitter.com/MikeCoatsDotCom/status/1052832221684477952">@MikeCoatsDotCom/1052832221684477952</a></p>
 
   </article>
+  <nav>
+    <a class="next" href="/snh-missing-maps-mapathon" title="SNH Missing Maps Mapathon">&#x21D0; Next</a>
+    <a class="previous" href="/trump-is-big-boss" title="Trump is Big Boss">Previous &#x21D2;</a>
+    <a class="home" href="/">Home</a>
+  </nav>
 </body>
 
 </html>

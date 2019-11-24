@@ -12,12 +12,32 @@
           color: #444;
       }
   
-      article {
+      article, nav {
           max-width: 60ch;
           margin-left: auto;
           margin-right: auto;
           text-align: justify;
           hyphens: auto;
+      }
+  
+      nav {
+          display: grid;
+          grid-template-columns: 1fr 1fr 1fr;
+      }
+      .next {
+          grid-column: 1;
+          grid-row: 1;
+          text-align: left;
+      }
+      .home {
+          grid-column: 2;
+          grid-row: 1;
+          text-align: center;
+      }
+      .previous {
+          grid-column: 3;
+          grid-row: 1;
+          text-align: right;
       }
   
       h1,
@@ -43,6 +63,10 @@
   
       pre>code {
           font-size: 0.9rem;
+      }
+  
+      pre {
+          padding:0.75rem;
       }
   
       img,
@@ -74,12 +98,11 @@
   <link rel="stylesheet" href="/css/highlight.min.css"></head>
 
 <body>
+  <nav>
+    <a class="next" href="/jeremy-kylebot" title="Jeremy Kylebot">&#x21D0; Next</a>
+    <header class="home"><a href="/">MikeCoats.com</a></header>
+  </nav>
   <article>
-    <nav>
-        <ul>
-            <li><a href="/">Home</a></li>
-        </ul>
-    </nav>
     <h1 id="intruder-alert">Intruder Alert</h1>
 <p>For a quick lunch-time electronics project, I’ve constructed an intruder alarm that can alert you any time somebody comes too close to your desk or cubicle. This project took me 45 minutes from start to finish including all coding, wiring and testing so—provided you’ve already got your lunch and eat it quickly—you too can be alerted to approaching co-workers before your lunch hour is up.</p>
 <p><img src="2013-09-05--intruder-alert--photo.jpg" alt="Photograph of completed Intruder Alert project"></p>
@@ -207,6 +230,10 @@ i.am@mikecoats.com
 <p><img src="2013-09-05--intruder-alert--fritzing.png" alt="Fritzing Schematic of Intruder Alert"></p>
 
   </article>
+  <nav>
+    <a class="next" href="/jeremy-kylebot" title="Jeremy Kylebot">&#x21D0; Next</a>
+    <a class="home" href="/">Home</a>
+  </nav>
 </body>
 
 </html>

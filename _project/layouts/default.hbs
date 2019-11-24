@@ -7,10 +7,17 @@
 </head>
 
 <body>
-  <article>
+  <nav>
     {{>nav}}
+    <header class="home"><a href="/">MikeCoats.com</a></header>
+  </nav>
+  <article>
     {{{contents}}}
   </article>
+  <nav>
+    {{>nav}}
+    <a class="home" href="/">Home</a>
+  </nav>
 </body>
 
 </html>

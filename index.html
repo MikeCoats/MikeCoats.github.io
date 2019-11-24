@@ -1,116 +1,148 @@
 <!doctype html>
 <html>
-
-<head>
-  <title>Home Page</title>
-  <style>
-      html {
-          font-size: 19px;
-          line-height: 32px;
-          font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-          background: #f8f8f8;
-          color: #444;
-      }
-  
+  <head>
+    <title>Home Page</title>
+    <style>
+        html {
+            font-size: 19px;
+            line-height: 32px;
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+            background: #f8f8f8;
+            color: #444;
+        }
+    
+        article, nav {
+            max-width: 60ch;
+            margin-left: auto;
+            margin-right: auto;
+            text-align: justify;
+            hyphens: auto;
+        }
+    
+        nav {
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr;
+        }
+        .next {
+            grid-column: 1;
+            grid-row: 1;
+            text-align: left;
+        }
+        .home {
+            grid-column: 2;
+            grid-row: 1;
+            text-align: center;
+        }
+        .previous {
+            grid-column: 3;
+            grid-row: 1;
+            text-align: right;
+        }
+    
+        h1,
+        h2,
+        h3 {
+            font-variant-caps: small-caps;
+        }
+    
+        h1 {
+            font-size: 2rem;
+            line-height: 3.08rem;
+        }
+    
+        h2 {
+            font-size: 1.5rem;
+            line-height: 2.31rem;
+        }
+    
+        h3 {
+            font-size: 1.25rem;
+            line-height: 1.925rem;
+        }
+    
+        pre>code {
+            font-size: 0.9rem;
+        }
+    
+        pre {
+            padding:0.75rem;
+        }
+    
+        img,
+        table,
+        pre {
+            background: white;
+            border: 1px solid black;
+        }
+    
+        @media (max-width: 109.99ch) {
+    
+            img,
+            table,
+            pre {
+                max-width: 100%;
+            }
+        }
+    
+        @media (min-width: 110ch) {
+    
+            img,
+            table,
+            pre {
+                margin-left: -10ch;
+                width: 80ch;
+            }
+        }
+    </style>
+    <link rel="stylesheet" href="/css/highlight.min.css">    <style>
       article {
-          max-width: 60ch;
-          margin-left: auto;
-          margin-right: auto;
-          text-align: justify;
-          hyphens: auto;
+        padding-bottom: 2rem;
       }
-  
-      h1,
-      h2,
-      h3 {
-          font-variant-caps: small-caps;
-      }
-  
-      h1 {
-          font-size: 2rem;
-          line-height: 3.08rem;
-      }
-  
-      h2 {
-          font-size: 1.5rem;
-          line-height: 2.31rem;
-      }
-  
-      h3 {
-          font-size: 1.25rem;
-          line-height: 1.925rem;
-      }
-  
-      pre>code {
-          font-size: 0.9rem;
-      }
-  
-      img,
-      table,
-      pre {
-          background: white;
-          border: 1px solid black;
-      }
-  
-      @media (max-width: 109.99ch) {
-  
-          img,
-          table,
-          pre {
-              max-width: 100%;
-          }
-      }
-  
-      @media (min-width: 110ch) {
-  
-          img,
-          table,
-          pre {
-              margin-left: -10ch;
-              width: 80ch;
-          }
-      }
-  </style>
-  <link rel="stylesheet" href="/css/highlight.min.css"></head>
-
-<body>
-  <article>
-    <nav>
-        <ul>
-            <li><a href="/">Home</a></li>
-        </ul>
-    </nav>
-    <h1 id="hello-world">Hello, world</h1>
+    </style>
+  </head>
+  <body>
+    <article>
+      <h1 id="hello-world">Hello, world</h1>
 <p>This is a paragraph of text that is only here to pad out the page.</p>
 <h2 id="a-second-section">A second section</h2>
 <p>This section exists for some reason.</p>
 
-  6
-  </article>
-  <article>
-      <a href="/intruder-alert">Intruder Alert</a>
-      2013-09-05
-      </article>
-  <article>
-      <a href="/jeremy-kylebot">Jeremy Kylebot</a>
-      2017-06-27
-      </article>
-  <article>
-      <a href="/fork-your-own-repo">Fork Your Own Repo</a>
-      2017-07-04
-      </article>
-  <article>
-      <a href="/trump-is-big-boss">Trump is Big Boss</a>
-      2017-07-18
-      </article>
-  <article>
-      <a href="/personal-weather-forecast">Personal Weather Forecast</a>
-      2018-12-29
-      </article>
-  <article>
-      <a href="/snh-missing-maps-mapathon">SNH Missing Maps Mapathon</a>
-      2018-12-31
-      </article>
-</body>
-
+    </article>
+    <article>
+      <h2><a href="/snh-missing-maps-mapathon">SNH Missing Maps Mapathon</a></h2>
+      <time datetime="2018-12-31">Monday, December 31, 2018</time>
+      <p>One of the perks of working for <a href="https://www.nature.scot/">Scottish Natural Heritage</a> is that they encourage you to take a day per year and volunteer on a charitable project. This year some of the staff from <a href="https://twitter.com/SNH_Maps">our GIS team</a> organised a number of <a href="http://www.missingmaps.org/">Missing Maps</a> events, one of which I was lucky enough to find a place on. In case you&apos;ve never heard of Missing Maps or the work they do, I&apos;ve included a short video here.</p>
+      <a href="/snh-missing-maps-mapathon">Continue reading SNH Missing Maps Mapathon...</a>
+    </article>
+    <article>
+      <h2><a href="/personal-weather-forecast">Personal Weather Forecast</a></h2>
+      <time datetime="2018-12-29">Saturday, December 29, 2018</time>
+      <p>tl;dr Personal Weather Forecast is a small JavaScript program that mashes together Dark Sky&apos;s API with Twilio&apos;s APIs to produce a personally tailored weather forecast and sends it to you as a text message every morning. The source code is available as <a href="https://github.com/MikeCoats/personal-weather-forecast">a project on GitHub, here</a>.</p>
+      <a href="/personal-weather-forecast">Continue reading Personal Weather Forecast...</a>
+    </article>
+    <article>
+      <h2><a href="/trump-is-big-boss">Trump is Big Boss</a></h2>
+      <time datetime="2017-07-18">Tuesday, July 18, 2017</time>
+      <p>tl;dr Trump Is Big Boss is a silly little program that randomly generates fake tweet screenshots that attribute quotes from Metal Gear&apos;s Big Boss to @realDonaldTrump.</p>
+      <a href="/trump-is-big-boss">Continue reading Trump is Big Boss...</a>
+    </article>
+    <article>
+      <h2><a href="/fork-your-own-repo">Fork Your Own Repo</a></h2>
+      <time datetime="2017-07-04">Tuesday, July 4, 2017</time>
+      <p>A common time-saving &apos;hack&apos; of mine when building &apos;new-but-related-to-old&apos; projects is to fork an existing code base and use it as the boot-strap for the new project. GitHub, however, does not provide the functionality on their website to fork your own project; you can only fork other people&apos;s projects. Here&apos;s how to work around that.</p>
+      <a href="/fork-your-own-repo">Continue reading Fork Your Own Repo...</a>
+    </article>
+    <article>
+      <h2><a href="/jeremy-kylebot">Jeremy Kylebot</a></h2>
+      <time datetime="2017-06-27">Tuesday, June 27, 2017</time>
+      <p>tl;dr Jeremy Kylebot is a silly little program that randomly generates title cards in the style of The Jeremy Kyle Show and posts them to Twitter.</p>
+      <a href="/jeremy-kylebot">Continue reading Jeremy Kylebot...</a>
+    </article>
+    <article>
+      <h2><a href="/intruder-alert">Intruder Alert</a></h2>
+      <time datetime="2013-09-05">Thursday, September 5, 2013</time>
+      <p>For a quick lunch-time electronics project, I&#x2019;ve constructed an intruder alarm that can alert you any time somebody comes too close to your desk or cubicle. This project took me 45 minutes from start to finish including all coding, wiring and testing so&#x2014;provided you&#x2019;ve already got your lunch and eat it quickly&#x2014;you too can be alerted to approaching co-workers before your lunch hour is up.</p>
+      <a href="/intruder-alert">Continue reading Intruder Alert...</a>
+    </article>
+  </body>
 </html>

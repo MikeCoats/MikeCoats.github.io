@@ -12,12 +12,32 @@
           color: #444;
       }
   
-      article {
+      article, nav {
           max-width: 60ch;
           margin-left: auto;
           margin-right: auto;
           text-align: justify;
           hyphens: auto;
+      }
+  
+      nav {
+          display: grid;
+          grid-template-columns: 1fr 1fr 1fr;
+      }
+      .next {
+          grid-column: 1;
+          grid-row: 1;
+          text-align: left;
+      }
+      .home {
+          grid-column: 2;
+          grid-row: 1;
+          text-align: center;
+      }
+      .previous {
+          grid-column: 3;
+          grid-row: 1;
+          text-align: right;
       }
   
       h1,
@@ -43,6 +63,10 @@
   
       pre>code {
           font-size: 0.9rem;
+      }
+  
+      pre {
+          padding:0.75rem;
       }
   
       img,
@@ -74,12 +98,12 @@
   <link rel="stylesheet" href="/css/highlight.min.css"></head>
 
 <body>
+  <nav>
+    <a class="next" href="/trump-is-big-boss" title="Trump is Big Boss">&#x21D0; Next</a>
+    <a class="previous" href="/jeremy-kylebot" title="Jeremy Kylebot">Previous &#x21D2;</a>
+    <header class="home"><a href="/">MikeCoats.com</a></header>
+  </nav>
   <article>
-    <nav>
-        <ul>
-            <li><a href="/">Home</a></li>
-        </ul>
-    </nav>
     <h1 id="fork-your-own-repo-on-github">Fork Your Own Repo on GitHub</h1>
 <p>A common time-saving &#39;hack&#39; of mine when building &#39;new-but-related-to-old&#39; projects is to fork an existing code base and use it as the boot-strap for the new project. GitHub, however, does not provide the functionality on their website to fork your own project; you can only fork other people&#39;s projects. Here&#39;s how to work around that.</p>
 <ul>
@@ -128,6 +152,11 @@ To https://github.com/MikeCoats/<span class="hljs-built_in">test</span>-project-
 <p><a href="https://twitter.com/MikeCoatsDotCom/status/882360457864065024">@MikeCoatsDotCom/882360457864065024</a></p>
 
   </article>
+  <nav>
+    <a class="next" href="/trump-is-big-boss" title="Trump is Big Boss">&#x21D0; Next</a>
+    <a class="previous" href="/jeremy-kylebot" title="Jeremy Kylebot">Previous &#x21D2;</a>
+    <a class="home" href="/">Home</a>
+  </nav>
 </body>
 
 </html>

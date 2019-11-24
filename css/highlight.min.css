@@ -12,12 +12,32 @@
           color: #444;
       }
   
-      article {
+      article, nav {
           max-width: 60ch;
           margin-left: auto;
           margin-right: auto;
           text-align: justify;
           hyphens: auto;
+      }
+  
+      nav {
+          display: grid;
+          grid-template-columns: 1fr 1fr 1fr;
+      }
+      .next {
+          grid-column: 1;
+          grid-row: 1;
+          text-align: left;
+      }
+      .home {
+          grid-column: 2;
+          grid-row: 1;
+          text-align: center;
+      }
+      .previous {
+          grid-column: 3;
+          grid-row: 1;
+          text-align: right;
       }
   
       h1,
@@ -43,6 +63,10 @@
   
       pre>code {
           font-size: 0.9rem;
+      }
+  
+      pre {
+          padding:0.75rem;
       }
   
       img,
@@ -74,14 +98,15 @@
   <link rel="stylesheet" href="/css/highlight.min.css"></head>
 
 <body>
+  <nav>
+    <header class="home"><a href="/">MikeCoats.com</a></header>
+  </nav>
   <article>
-    <nav>
-        <ul>
-            <li><a href="/">Home</a></li>
-        </ul>
-    </nav>
     .hljs{display:block;overflow-x:auto;padding:.5em;background:#F0F0F0}.hljs,.hljs-subst{color:#444}.hljs-comment{color:#888888}.hljs-keyword,.hljs-attribute,.hljs-selector-tag,.hljs-meta-keyword,.hljs-doctag,.hljs-name{font-weight:bold}.hljs-type,.hljs-string,.hljs-number,.hljs-selector-id,.hljs-selector-class,.hljs-quote,.hljs-template-tag,.hljs-deletion{color:#880000}.hljs-title,.hljs-section{color:#880000;font-weight:bold}.hljs-regexp,.hljs-symbol,.hljs-variable,.hljs-template-variable,.hljs-link,.hljs-selector-attr,.hljs-selector-pseudo{color:#BC6060}.hljs-literal{color:#78A960}.hljs-built_in,.hljs-bullet,.hljs-code,.hljs-addition{color:#397300}.hljs-meta{color:#1f7199}.hljs-meta-string{color:#4d99bf}.hljs-emphasis{font-style:italic}.hljs-strong{font-weight:bold}
   </article>
+  <nav>
+    <a class="home" href="/">Home</a>
+  </nav>
 </body>
 
 </html>

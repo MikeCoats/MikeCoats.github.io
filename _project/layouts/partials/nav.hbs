@@ -1,5 +1,6 @@
-<nav>
-    <ul>
-        <li><a href="/">Home</a></li>
-    </ul>
-</nav>
+{{#if previous}}
+<a class="next" href="/{{{previous.path}}}" title="{{previous.title}}">&#x21D0; Next</a>
+{{/if}}
+{{#if next}}
+<a class="previous" href="/{{{next.path}}}" title="{{next.title}}">Previous &#x21D2;</a>
+{{/if}}

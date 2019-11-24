@@ -1,23 +1,25 @@
 <!doctype html>
 <html>
-
-<head>
-  <title>{{ title }}</title>
-  {{>head}}
-</head>
-
-<body>
-  <article>
-    {{>nav}}
-    {{{contents}}}
-  {{count collections.posts}}
-  </article>
-  {{#each collections.posts}}
-  <article>
-      <a href="/{{path}}">{{title}}</a>
-      {{ prettyDate date }}
-      </article>
-  {{/each}}
-</body>
-
+  <head>
+    <title>{{ title }}</title>
+    {{> head }}
+    <style>
+      article {
+        padding-bottom: 2rem;
+      }
+    </style>
+  </head>
+  <body>
+    <article>
+      {{{ contents }}}
+    </article>
+    {{# each collections.posts }}
+    <article>
+      <h2><a href="/{{ path }}">{{ title }}</a></h2>
+      <time datetime="{{ dateTime date }}">{{ prettyDate date }}</time>
+      {{{ excerpt }}}
+      <a href="/{{ path }}">Continue reading {{ title }}...</a>
+    </article>
+    {{/ each }}
+  </body>
 </html>
