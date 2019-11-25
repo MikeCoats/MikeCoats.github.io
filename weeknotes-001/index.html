@@ -1,0 +1,136 @@
+<!doctype html>
+<html>
+
+<head>
+  <title>Weeknotes 001</title>
+  <style>
+      html {
+          font-size: 19px;
+          line-height: 32px;
+          font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+          background: #f8f8f8;
+          color: #444;
+      }
+  
+      article, nav {
+          max-width: 60ch;
+          margin-left: auto;
+          margin-right: auto;
+          text-align: justify;
+          hyphens: auto;
+      }
+  
+      nav {
+          display: grid;
+          grid-template-columns: 1fr 1fr 1fr;
+      }
+      .next {
+          grid-column: 1;
+          grid-row: 1;
+          text-align: left;
+      }
+      .home {
+          grid-column: 2;
+          grid-row: 1;
+          text-align: center;
+      }
+      .previous {
+          grid-column: 3;
+          grid-row: 1;
+          text-align: right;
+      }
+  
+      h1,
+      h2,
+      h3 {
+          font-variant-caps: small-caps;
+      }
+  
+      h1 {
+          font-size: 2rem;
+          line-height: 3.08rem;
+      }
+  
+      h2 {
+          font-size: 1.5rem;
+          line-height: 2.31rem;
+      }
+  
+      h3 {
+          font-size: 1.25rem;
+          line-height: 1.925rem;
+      }
+  
+      pre>code {
+          font-size: 0.9rem;
+      }
+  
+      pre {
+          padding:0.75rem;
+      }
+  
+      img,
+      table,
+      pre {
+          background: white;
+          border: 1px solid black;
+      }
+  
+      @media (max-width: 109.99ch) {
+  
+          img,
+          table,
+          pre {
+              max-width: 100%;
+          }
+      }
+  
+      @media (min-width: 110ch) {
+  
+          img,
+          table,
+          pre {
+              margin-left: -10ch;
+              width: 80ch;
+          }
+      }
+  </style>
+  <link rel="stylesheet" href="/css/highlight.min.css"></head>
+
+<body>
+  <nav>
+    <a class="previous" href="/snh-missing-maps-mapathon" title="SNH Missing Maps Mapathon">Previous &#x21D2;</a>
+    <header class="home"><a href="/">MikeCoats.com</a></header>
+  </nav>
+  <article>
+    <h1 id="weeknotes-for-18th-november-2019---24th-november-2019">Weeknotes for 18th November 2019 - 24th November 2019</h1>
+<p>I&#39;ve followed a few digital government folk like <a href="https://twitter.com/edent">@edent</a> on twitter for a while and seen their <a href="https://twitter.com/hashtag/weeknotes">#weeknotes</a> approach to blogging, so I&#39;ve decided to dip my toe in and write a little post about what I&#39;ve been up to this past week.</p>
+<p>It can be difficult to remember everything you did if you don&#39;t deliberately keep notes, but the one thing that was keeping notes all week was my browser history. Reviewing your browser searches can be quite enlightening, revealing things that tripped you up or that you needed help with.</p>
+<h2 id="roku-sdk-brightscript--windows-95-star-field"><code>roku sdk</code>, <code>brightscript</code> &amp; <code>windows 95 star field</code></h2>
+<p>On the 17th <a href="https://twitter.com/nicolehe">Nicole He</a> posted up <a href="https://twitter.com/nicolehe/status/1196193647244578816">a thread on twitter</a> showing the truly bizarre and <strong>kinda-probably-NSFW</strong> collection of screensavers available for installation on Roku devices. I didn&#39;t even realise that screensavers for your Roku were a thing or that custom ones were available. I immediately signed up for a developer account, of course, and started work on bringing a late 90&#39;s classic back from the dead and on to my TV screen.</p>
+<h2 id="oracle-regular-expression--regexp_like"><code>oracle regular expression</code> &amp; <code>regexp_like</code></h2>
+<p>We&#39;re continually updating and upgrading our applications at <a href="https://www.nature.scot">SNH</a>, and an integral part of that work is data migration and management. I had to wrangle some &#39;stringly-typed&#39; numbers this week in our Oracle database and so I got an opportunity to flex my regular expression muscles. Luckily for me, it didn&#39;t turn in to <a href="http://regex.info/blog/2006-09-15/247">two problems</a>.</p>
+<h2 id="angular-template-reference-variable-ngcontent-controlvalueaccessor--htmlinputelement"><code>Angular template reference variable</code>, <code>ngcontent</code>, <code>ControlValueAccessor</code> &amp; <code>HtmlInputElement</code></h2>
+<p>At <a href="https://www.nature.scot">SNH</a>, we develop our applications like <a href="https://sitelink.nature.scot">SiteLink</a> using the <a href="https://angular.io">Angular framework</a>. To keep our UIs and UXs consistent between applications, I&#39;ve been looking at what&#39;s required to put our commonly re-used components in a library available for re-use across the organisation.</p>
+<h2 id="httpstatuses"><code>httpstatuses</code></h2>
+<p>Creating and working with RESTful services mean you need to have a pretty decent knowledge of the HTTP status codes. I can never keep track of the higher-numbered 4xx errors, which is why I like <a href="https://httpstatuses.com/">this HTTP Status Codes</a> site.</p>
+<h2 id="metalsmith-handlebars-stringify-json-stringify-circular"><code>metalsmith</code>, <code>handlebars stringify</code>, <code>json stringify circular</code></h2>
+<p>I&#39;ve written this blog using the static site generator [Metalsmith][metalsmith] and to get to grips with the data structures it creates on the journey from markdown to HTML I was looking at a way to dump the current page&#39;s object to the HTML. This brought to light an interesting point that <code>JSON.stringify</code> cannot handle javascript objects that contain circular references, but <code>console.log</code> can. Something to remember for the future!</p>
+<h2 id="unicode-arrow-html5-unicode--html5-semantic-elements-mdn-date-localedate"><code>unicode arrow</code>, <code>html5 unicode</code> &amp; <code>html5 semantic elements</code>, <code>mdn date</code>, <code>localedate</code></h2>
+<p>As part of my blog&#39;s redesign I was looking at ways to embed forward and backward arrows for post-to-post navigation and how to get some &#39;pretty&#39; looking dates displayed on the home page. I can never remember the proper way to embed a hex reference to a unicode character in HTML. It&#39;s <code>&amp;#x????;</code>, by the way.</p>
+<h2 id="remount-usb-rw--linux-mount-hfsplus-ignore-user"><code>remount usb rw</code> &amp; <code>linux mount hfsplus ignore user</code></h2>
+<p>I was doing some tidying one evening and came across a couple of old USB memory sticks that I had no idea what, if anything, was on them. It turned out they were from back when I ran OS X/macOS on my laptop, so getting in to them to back up the files and wipe the drives took a little bit of effort.</p>
+<h2 id="jess-frazelle-docker-firefox-vscode-x11-forwarding--web-vnc"><code>jess frazelle docker firefox</code>, <code>vscode x11 forwarding</code> &amp; <code>web vnc</code></h2>
+<p>I&#39;m a techie at heart, and I&#39;m always on the look-out for new, hacky, ways to set up my environment. I&#39;d love to be able to work properly from an iPad, and I&#39;m 90% there with <a href="https://www.panic.com/prompt/">Prompt</a> connecting to my Linux server, but I&#39;ve not got a good solution for very interactive GUI applications yet. I&#39;ve followed <a href="https://twitter.com/jessfraz">Jessie Frazelle</a> on twitter for a few years and I could remember that she had written a blog post about running <a href="https://blog.jessfraz.com/post/docker-containers-on-the-desktop/">desktop apps like Firefox in docker containers</a>. If I could spin up an app in a container, then I could deploy that to my Linux server and use it as headless terminal.</p>
+<p>To start, I managed to get <a href="http://www.mochasoft.dk/iphone_x11.htm">Mocha X11</a> on my iPhone to connect to my Debian laptop and launch vscode from there to display on my phone&#39;s screen. At first, it didn&#39;t appear to work as each time I connected using <a href="http://www.mochasoft.dk/iphone_x11.htm">Mocha</a> the new copy of vscode appeared on my laptop screen and not my phone screen. I realised that vscode was sharing some sort of &#39;session&#39; and launching subsequent copies as extra windows on the first copy - not as wholly new processes. Killing all vscode instances and trying once again from the phone worked a treat.</p>
+<p>It turns out that vscode isn&#39;t a great application to run over X11 - presumably as it&#39;s an electron app, so rendering is handled in a very non-X11 way. I tried launching <a href="https://keepassxc.org/">KeePassXC</a> instead and it performed a lot better.</p>
+<p>In my further searching around the idea of <code>web vnc</code> I came across <a href="https://guacamole.apache.org/">Apache Guacamole</a>, which looks quite promising as a method of accessing applications remotely. If I can set it up as some kind of gateway to allow access in to my dockerised desktop apps, I might be on to something.</p>
+
+  </article>
+  <nav>
+    <a class="previous" href="/snh-missing-maps-mapathon" title="SNH Missing Maps Mapathon">Previous &#x21D2;</a>
+    <a class="home" href="/">Home</a>
+  </nav>
+</body>
+
+</html>
