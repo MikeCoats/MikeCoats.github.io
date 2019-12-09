@@ -104,14 +104,16 @@
   </nav>
   <article>
     <h1 id="weeknotes-for-2nd-december-2019---8th-december-2019">Weeknotes for 2nd December 2019 - 8th December 2019</h1>
-<p>In an effort to keep my blogging momentum up, here&#39;s my third consequitive <a href="https://twitter.com/hashtag/weeknotes">#weeknotes</a> post. As in past weeks, I&#39;ll be rounding up any of the interesting things I&#39;ve been searching for on the internet.</p>
+<p>In an effort to keep my blogging momentum up, here&#39;s my third consecutive <a href="https://twitter.com/hashtag/weeknotes">#weeknotes</a> post. As in past weeks, I&#39;ll be rounding up any of the interesting things I&#39;ve been searching for on the internet.</p>
 <h2 id="advent-of-code"><code>advent of code</code></h2>
 <p>For the <a href="https://adventofcode.com/events">past few years</a>, every December, <a href="http://was.tl/">Eric Wastl</a> has run a series of coding challenges called <a href="https://adventofcode.com/">Advent of Code</a>. These work like an Advent Calendar, with a new challenge becoming available each day. They can be solved using any tools or programming languages you want, so I have chosen NodeJS &amp; regular JS to keep the tooling to a minimum. I started off strongly, but I&#39;ve not had enough time to dedicate to it yet and I&#39;ve started running behind. To keep an eye on my progess, you can follow my <a href="https://github.com/MikeCoats/advent-of-code">GitHub repo, here</a>.</p>
 <h2 id="mdn-reduce--mdn-biggest-number"><code>mdn reduce</code> &amp;&amp; <code>mdn biggest number</code></h2>
 <p>One of the <a href="https://adventofcode.com/2019/day/3">Advent of Code challenges</a> had us searching for the smallest number in a list of results. My favorite aspect of programming in JavaScript over many other languages is it&#39;s ability to work with lists and arrays, gained from its functional programming roots. This lets us process arrays using concepts like <code>map</code> and <code>reduce</code> giving us the following snippet for retrieving the smallest item from a list.</p>
-<pre><code class="hljs js"><span class="hljs-built_in">console</span>.log([<span class="hljs-number">1</span>, <span class="hljs-number">2</span>, <span class="hljs-number">3</span>, <span class="hljs-number">4</span>, <span class="hljs-number">5</span>].reduce(<span class="hljs-function">(<span class="hljs-params">prev, curr</span>) =&gt;</span> <span class="hljs-built_in">Math</span>.min(prev, curr), <span class="hljs-built_in">Number</span>.MAX_VALUE));</code></pre>
+<pre><code class="hljs js"><span class="hljs-built_in">console</span>.log([<span class="hljs-number">1</span>, <span class="hljs-number">2</span>, <span class="hljs-number">3</span>, <span class="hljs-number">4</span>, <span class="hljs-number">5</span>].reduce(
+    <span class="hljs-function">(<span class="hljs-params">prev, curr</span>) =&gt;</span> <span class="hljs-built_in">Math</span>.min(prev, curr),
+    <span class="hljs-built_in">Number</span>.MAX_VALUE));</code></pre>
 
-<p>I used <code>Number.MAX_VALUE</code> as the <code>initalValue</code> in the reduce call as that&#39;s the largest number JavaScript can hold; any other given value must be smaller than it, making it an ideal starting point for finding consequtive minimums. <code>Number.POSITIVE_INFINITY</code> is also available, and could even be a better choice due to the Number.isFinite() method to make sure we&#39;ve actually found a smaller number.</p>
+<p>I used <code>Number.MAX_VALUE</code> as the <code>initalValue</code> in the reduce call as that&#39;s the largest number JavaScript can hold; any other given value must be smaller than it, making it an ideal starting point for finding minimums in a list. <code>Number.POSITIVE_INFINITY</code> is also available, and could even be a better choice due to the Number.isFinite() method to make sure we&#39;ve actually found a smaller number.</p>
 <h2 id="mdn-spread-operator-array-copy"><code>mdn spread operator array copy</code></h2>
 <p>When I was prototyping an answer for another challenge, I found myself needing to create a copy of an array, not just a reference to it, and the <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Spread_syntax">spread operator</a> is great for that. It creates a new array with all of the original array members contained within.</p>
 <pre><code class="hljs js"><span class="hljs-keyword">const</span> testArray1 = [<span class="hljs-number">1</span>, <span class="hljs-number">2</span>, <span class="hljs-number">3</span>, <span class="hljs-number">4</span>, <span class="hljs-number">5</span>];
@@ -128,7 +130,7 @@ testArray3.push(<span class="hljs-string">'Just Here'</span>);
 
 <h2 id="git-change-old-commit-messages"><code>git change old commit messages</code></h2>
 <p>Working as a full-stack developer often means fixing bugs or adding features that cross both the front-end and back-end sytems. At work, we follow <a href="https://chris.beams.io/posts/git-commit/">Chris Beams&#39; seven rules</a> for git commit messages, which means ending our messages with references to the issues that the piece of work was for. Jumping between different repos for front and back-ends can result in the front-end commits being tagged with the back-end issues and vice-versa. To fix this, and re-write a series of commit messages, you can take advantage of git&#39;s interactive rebase mode, and rewrite the last, say, 3 messages by using the following command.</p>
-<pre><code class="hljs sh">git rebase -i HEAD~3`</code></pre>
+<pre><code class="hljs sh">git rebase -i HEAD~3</code></pre>
 
 <p>You will then be presented with a summary listing those commits.</p>
 <pre><code class="hljs">pick <span class="hljs-number">55f</span>9d3e Advent of Code <span class="hljs-number">2018</span>, Day <span class="hljs-number">1</span>, Stars <span class="hljs-number">1</span> &amp; <span class="hljs-number">2</span>
@@ -140,6 +142,9 @@ pick <span class="hljs-number">62</span>de55e Advent of Code <span class="hljs-n
 reword d577864 Advent of Code <span class="hljs-number">2019</span>, Day <span class="hljs-number">2</span>, Star <span class="hljs-number">1</span>
 reword <span class="hljs-number">62</span>de55e Advent of Code <span class="hljs-number">2019</span>, Day <span class="hljs-number">2</span>, Star <span class="hljs-number">2</span></code></pre>
 
+<h2 id="discussion">Discussion</h2>
+<p>If you want to leave a comment or discuss this post, please reply to my tweet below!</p>
+<p><a href="https://twitter.com/MikeCoatsDotCom/status/1204004148213104640">@MikeCoatsDotCom/1204004148213104640</a></p>
 
   </article>
   <nav>
