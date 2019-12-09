@@ -1,0 +1,151 @@
+<!doctype html>
+<html>
+
+<head>
+  <title>Weeknotes 003</title>
+  <style>
+      html {
+          font-size: 19px;
+          line-height: 32px;
+          font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+          background: #f8f8f8;
+          color: #444;
+      }
+  
+      article, nav {
+          max-width: 60ch;
+          margin-left: auto;
+          margin-right: auto;
+          text-align: justify;
+          hyphens: auto;
+      }
+  
+      nav {
+          display: grid;
+          grid-template-columns: 1fr 1fr 1fr;
+      }
+      .next {
+          grid-column: 1;
+          grid-row: 1;
+          text-align: left;
+      }
+      .home {
+          grid-column: 2;
+          grid-row: 1;
+          text-align: center;
+      }
+      .previous {
+          grid-column: 3;
+          grid-row: 1;
+          text-align: right;
+      }
+  
+      h1,
+      h2,
+      h3 {
+          font-variant-caps: small-caps;
+      }
+  
+      h1 {
+          font-size: 2rem;
+          line-height: 3.08rem;
+      }
+  
+      h2 {
+          font-size: 1.5rem;
+          line-height: 2.31rem;
+      }
+  
+      h3 {
+          font-size: 1.25rem;
+          line-height: 1.925rem;
+      }
+  
+      pre>code {
+          font-size: 0.9rem;
+      }
+  
+      pre {
+          padding:0.75rem;
+      }
+  
+      img,
+      table,
+      pre {
+          background: white;
+          border: 1px solid black;
+      }
+  
+      @media (max-width: 109.99ch) {
+  
+          img,
+          table,
+          pre {
+              max-width: 100%;
+          }
+      }
+  
+      @media (min-width: 110ch) {
+  
+          img,
+          table,
+          pre {
+              margin-left: -10ch;
+              width: 80ch;
+          }
+      }
+  </style>
+  <link rel="stylesheet" href="/css/highlight.min.css"></head>
+
+<body>
+  <nav>
+    <a class="previous" href="/weeknotes-002" title="Weeknotes 002">Previous &#x21D2;</a>
+    <header class="home"><a href="/">MikeCoats.com</a></header>
+  </nav>
+  <article>
+    <h1 id="weeknotes-for-2nd-december-2019---8th-december-2019">Weeknotes for 2nd December 2019 - 8th December 2019</h1>
+<p>In an effort to keep my blogging momentum up, here&#39;s my third consequitive <a href="https://twitter.com/hashtag/weeknotes">#weeknotes</a> post. As in past weeks, I&#39;ll be rounding up any of the interesting things I&#39;ve been searching for on the internet.</p>
+<h2 id="advent-of-code"><code>advent of code</code></h2>
+<p>For the <a href="https://adventofcode.com/events">past few years</a>, every December, <a href="http://was.tl/">Eric Wastl</a> has run a series of coding challenges called <a href="https://adventofcode.com/">Advent of Code</a>. These work like an Advent Calendar, with a new challenge becoming available each day. They can be solved using any tools or programming languages you want, so I have chosen NodeJS &amp; regular JS to keep the tooling to a minimum. I started off strongly, but I&#39;ve not had enough time to dedicate to it yet and I&#39;ve started running behind. To keep an eye on my progess, you can follow my <a href="https://github.com/MikeCoats/advent-of-code">GitHub repo, here</a>.</p>
+<h2 id="mdn-reduce--mdn-biggest-number"><code>mdn reduce</code> &amp;&amp; <code>mdn biggest number</code></h2>
+<p>One of the <a href="https://adventofcode.com/2019/day/3">Advent of Code challenges</a> had us searching for the smallest number in a list of results. My favorite aspect of programming in JavaScript over many other languages is it&#39;s ability to work with lists and arrays, gained from its functional programming roots. This lets us process arrays using concepts like <code>map</code> and <code>reduce</code> giving us the following snippet for retrieving the smallest item from a list.</p>
+<pre><code class="hljs js"><span class="hljs-built_in">console</span>.log([<span class="hljs-number">1</span>, <span class="hljs-number">2</span>, <span class="hljs-number">3</span>, <span class="hljs-number">4</span>, <span class="hljs-number">5</span>].reduce(<span class="hljs-function">(<span class="hljs-params">prev, curr</span>) =&gt;</span> <span class="hljs-built_in">Math</span>.min(prev, curr), <span class="hljs-built_in">Number</span>.MAX_VALUE));</code></pre>
+
+<p>I used <code>Number.MAX_VALUE</code> as the <code>initalValue</code> in the reduce call as that&#39;s the largest number JavaScript can hold; any other given value must be smaller than it, making it an ideal starting point for finding consequtive minimums. <code>Number.POSITIVE_INFINITY</code> is also available, and could even be a better choice due to the Number.isFinite() method to make sure we&#39;ve actually found a smaller number.</p>
+<h2 id="mdn-spread-operator-array-copy"><code>mdn spread operator array copy</code></h2>
+<p>When I was prototyping an answer for another challenge, I found myself needing to create a copy of an array, not just a reference to it, and the <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Spread_syntax">spread operator</a> is great for that. It creates a new array with all of the original array members contained within.</p>
+<pre><code class="hljs js"><span class="hljs-keyword">const</span> testArray1 = [<span class="hljs-number">1</span>, <span class="hljs-number">2</span>, <span class="hljs-number">3</span>, <span class="hljs-number">4</span>, <span class="hljs-number">5</span>];
+
+<span class="hljs-keyword">const</span> testArray2 = testArray1;
+testArray2.push(<span class="hljs-string">'Everywhere'</span>);
+
+<span class="hljs-keyword">const</span> testArray3 = [...testArray1];
+testArray3.push(<span class="hljs-string">'Just Here'</span>);
+
+<span class="hljs-built_in">console</span>.log(testArray1); <span class="hljs-comment">// [ 1, 2, 3, 4, 5, 'Everywhere' ]</span>
+<span class="hljs-built_in">console</span>.log(testArray2); <span class="hljs-comment">// [ 1, 2, 3, 4, 5, 'Everywhere' ]</span>
+<span class="hljs-built_in">console</span>.log(testArray3); <span class="hljs-comment">// [ 1, 2, 3, 4, 5, 'Everywhere', 'Just Here' ]</span></code></pre>
+
+<h2 id="git-change-old-commit-messages"><code>git change old commit messages</code></h2>
+<p>Working as a full-stack developer often means fixing bugs or adding features that cross both the front-end and back-end sytems. At work, we follow <a href="https://chris.beams.io/posts/git-commit/">Chris Beams&#39; seven rules</a> for git commit messages, which means ending our messages with references to the issues that the piece of work was for. Jumping between different repos for front and back-ends can result in the front-end commits being tagged with the back-end issues and vice-versa. To fix this, and re-write a series of commit messages, you can take advantage of git&#39;s interactive rebase mode, and rewrite the last, say, 3 messages by using the following command.</p>
+<pre><code class="hljs sh">git rebase -i HEAD~3`</code></pre>
+
+<p>You will then be presented with a summary listing those commits.</p>
+<pre><code class="hljs">pick <span class="hljs-number">55f</span>9d3e Advent of Code <span class="hljs-number">2018</span>, Day <span class="hljs-number">1</span>, Stars <span class="hljs-number">1</span> &amp; <span class="hljs-number">2</span>
+pick d577864 Advent of Code <span class="hljs-number">2019</span>, Day <span class="hljs-number">2</span>, Star <span class="hljs-number">1</span>
+pick <span class="hljs-number">62</span>de55e Advent of Code <span class="hljs-number">2019</span>, Day <span class="hljs-number">2</span>, Star <span class="hljs-number">2</span></code></pre>
+
+<p>Changing each of those <code>pick</code>s (which would just use the commit as-is) to <code>reword</code>s tells git to accept the code changes, but re-write the commit messages, allowing you to fix your incorrect issue references.</p>
+<pre><code class="hljs">reword <span class="hljs-number">55f</span>9d3e Advent of Code <span class="hljs-number">2018</span>, Day <span class="hljs-number">1</span>, Stars <span class="hljs-number">1</span> &amp; <span class="hljs-number">2</span>
+reword d577864 Advent of Code <span class="hljs-number">2019</span>, Day <span class="hljs-number">2</span>, Star <span class="hljs-number">1</span>
+reword <span class="hljs-number">62</span>de55e Advent of Code <span class="hljs-number">2019</span>, Day <span class="hljs-number">2</span>, Star <span class="hljs-number">2</span></code></pre>
+
+
+  </article>
+  <nav>
+    <a class="previous" href="/weeknotes-002" title="Weeknotes 002">Previous &#x21D2;</a>
+    <a class="home" href="/">Home</a>
+  </nav>
+</body>
+
+</html>
