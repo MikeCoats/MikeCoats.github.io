@@ -53,6 +53,6 @@ If you want to leave a comment or discuss this post, please reply to my tweet be
 [@MikeCoatsDotCom/1052832221684477952][discussion-tweet]
 
 [github-project]: https://github.com/MikeCoats/personal-weather-forecast
-[notification-screenshot]: 2018-12-29--personal-weather-forecast--notification.jpg
-[message-screenshot]: 2018-12-29--personal-weather-forecast--message.jpg
+[notification-screenshot]: notification.jpg
+[message-screenshot]: message.jpg
 [discussion-tweet]: https://twitter.com/MikeCoatsDotCom/status/1052832221684477952

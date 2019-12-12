@@ -28,7 +28,8 @@ Metalsmith(__dirname)
   .use(markdown())
   .use(excerpts())
   .use(permalinks({
-    pattern: ':title'
+    pattern: ':title',
+    relative: 'folder'
   }))
   .use(discoverPartials({
     directory: 'layouts/partials'

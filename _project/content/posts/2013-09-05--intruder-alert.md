@@ -100,5 +100,5 @@ void loop() {
 
 ![Fritzing Schematic of Intruder Alert][schematic]
 
-[photo]: 2013-09-05--intruder-alert--photo.jpg
-[schematic]: 2013-09-05--intruder-alert--fritzing.png
+[photo]: photo.jpg
+[schematic]: fritzing.png

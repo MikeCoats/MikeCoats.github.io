@@ -1,11 +1,12 @@
 {
   "name": "mikecoats.github.io",
-  "version": "2019.09.15",
+  "version": "2019.12.12",
   "description": "",
   "main": "main.js",
   "scripts": {
     "prestart": "rm -rf $(find .. -maxdepth 1  ! -name .. ! -name .git ! -name .gitignore ! -name _project ! -name CNAME)",
     "start": "node main.js",
+    "poststart": "rm  -rf ../posts",
     "dev": "./node_modules/.bin/http-server .."
   },
   "repository": "github:MikeCoats/mikecoats.github.io.git",

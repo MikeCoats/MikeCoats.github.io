@@ -30,7 +30,7 @@ If you want to leave a comment or discuss this post, please reply to my tweet be
 [snh]: https://www.nature.scot/
 [snh-gig]: https://twitter.com/SNH_Maps
 [missing-maps]: http://www.missingmaps.org/
-[missing-maps-screenshot]: 2018-12-31--snh-missing-maps-mapathon--youtube.png
+[missing-maps-screenshot]: youtube.png
 [missing-maps-video]: https://www.youtube.com/watch?v=wEEnOqmVfqM
 [osm]: https://www.openstreetmap.org/
 [hotosm]: https://tasks.hotosm.org/

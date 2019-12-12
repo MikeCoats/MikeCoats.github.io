@@ -21,7 +21,7 @@ This script is forked from my first proper Twitter bot, [The Jeremy Kylebot][kyl
 
 [@TrumpIsBigBoss/1069690246307168256][example-3]
 
-[tweet-screenshot]: 2017-07-18--trump-is-big-boss--screenshot.png
+[tweet-screenshot]: screenshot.png
 [github-project]: https://github.com/MikeCoats/trumps-bigboss-bot
 [twitter-account]: https://twitter.com/TrumpIsBigBoss
 [kylebot-post]: /jeremy-kylebot

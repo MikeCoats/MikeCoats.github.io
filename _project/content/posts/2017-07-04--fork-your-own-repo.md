@@ -59,5 +59,5 @@ If you want to leave a comment or discuss this post, please reply to my tweet be
 [@MikeCoatsDotCom/882360457864065024][discussion-tweet]
 
 [new-project]: https://github.com/new
-[new-repo-screenshot]: 2017-07-04--fork-your-own-repo--new-repo.png
+[new-repo-screenshot]: new-repo.png
 [discussion-tweet]: https://twitter.com/MikeCoatsDotCom/status/882360457864065024

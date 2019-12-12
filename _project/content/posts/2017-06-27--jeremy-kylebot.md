@@ -21,7 +21,7 @@ I've tried to make the format of the show titles match the look-and-feel of genu
 
 [@JeremyKylebot/1067749959817150465][example-3]
 
-[tweet-screenshot]: 2017-06-27--jeremy-kylebot--screenshot.png
+[tweet-screenshot]: screenshot.png
 [github-project]: https://github.com/MikeCoats/kyle-bot
 [twitter-account]: https://twitter.com/JeremyKylebot
 [example-1]: https://twitter.com/JeremyKylebot/status/1067478171623276544
