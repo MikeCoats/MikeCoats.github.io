@@ -1,0 +1,1556 @@
+<?xml version="1.0" encoding="utf-8" standalone="no"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+  <updated>2019-12-21T19:29:26.095Z</updated>
+  <entry>
+    <title>Weeknotes 004</title>
+    <updated>2019-12-21T00:00:00.000Z</updated>
+    <content>&lt;!doctype html&gt;
+&lt;html&gt;
+
+&lt;head&gt;
+  &lt;title&gt;Weeknotes 004&lt;/title&gt;
+  &lt;style&gt;
+      html {
+          font-size: 19px;
+          line-height: 32px;
+          font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+          background: #f8f8f8;
+          color: #444;
+      }
+  
+      article, nav {
+          max-width: 60ch;
+          margin-left: auto;
+          margin-right: auto;
+          text-align: justify;
+          hyphens: auto;
+      }
+  
+      nav {
+          display: grid;
+          grid-template-columns: 1fr 1fr 1fr;
+      }
+      .next {
+          grid-column: 1;
+          grid-row: 1;
+          text-align: left;
+      }
+      .home {
+          grid-column: 2;
+          grid-row: 1;
+          text-align: center;
+      }
+      .previous {
+          grid-column: 3;
+          grid-row: 1;
+          text-align: right;
+      }
+  
+      h1,
+      h2,
+      h3 {
+          font-variant-caps: small-caps;
+      }
+  
+      h1 {
+          font-size: 2rem;
+          line-height: 3.08rem;
+      }
+  
+      h2 {
+          font-size: 1.5rem;
+          line-height: 2.31rem;
+      }
+  
+      h3 {
+          font-size: 1.25rem;
+          line-height: 1.925rem;
+      }
+  
+      pre&gt;code {
+          font-size: 0.9rem;
+      }
+  
+      pre {
+          padding:0.75rem;
+      }
+  
+      img,
+      table,
+      pre {
+          background: white;
+          border: 1px solid black;
+      }
+  
+      @media (max-width: 109.99ch) {
+  
+          img,
+          table,
+          pre {
+              max-width: 100%;
+          }
+      }
+  
+      @media (min-width: 110ch) {
+  
+          img,
+          table,
+          pre {
+              margin-left: -10ch;
+              width: 80ch;
+          }
+      }
+  &lt;/style&gt;
+  &lt;link rel="stylesheet" href="/css/highlight.min.css"&gt;
+  &lt;link rel="alternate" type="application/atom+xml" href="/feed/atom/index.xml" /&gt;
+&lt;/head&gt;
+
+&lt;body&gt;
+  &lt;nav&gt;
+    &lt;a class="previous" href="/weeknotes-003" title="Weeknotes 003"&gt;Previous &amp;#x21D2;&lt;/a&gt;
+    &lt;header class="home"&gt;&lt;a href="/"&gt;MikeCoats.com&lt;/a&gt;&lt;/header&gt;
+  &lt;/nav&gt;
+  &lt;article&gt;
+    &lt;h1 id="weeknotes-for-9th-december-2019---15th-december-2019"&gt;Weeknotes for 9th December 2019 - 15th December 2019&lt;/h1&gt;
+&lt;h2 id="fàilte-agus-tapadh-leibh-a-charaid"&gt;Fàilte agus tapadh leibh, a charaid!&lt;/h2&gt;
+&lt;p&gt;This one&amp;#39;s a little late, but it&amp;#39;s finally here; another &lt;a href="https://twitter.com/hashtag/weeknotes"&gt;#weeknotes&lt;/a&gt; report! This week was a different one for me as it was focused on learning rather than building.&lt;/p&gt;
+&lt;h2 id="sepa-visit"&gt;SEPA Visit&lt;/h2&gt;
+&lt;p&gt;On Monday and Tuesday, a group of us from &lt;a href="https://www.nature.scot"&gt;SNH&lt;/a&gt; went to visit one of our sister agencies, &lt;a href="https://www.sepa.org.uk/"&gt;SEPA&lt;/a&gt;, as they&amp;#39;ve just released three new applications.&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href="https://privatesewage-services.sepa.org.uk/"&gt;Register your private sewage treatment system&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://radioactivesubstances-services.sepa.org.uk/n-lowrisk/GDPR"&gt;Notify SEPA about the management of radioactive sources&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://wastemanagementexemption-services.sepa.org.uk/"&gt;Register your exempt waste activity&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;They&amp;#39;ve developed these applications following the &lt;a href="https://resources.mygov.scot/standards/digital-first/"&gt;Digital First Service Standard&lt;/a&gt; and as we&amp;#39;re about to build and release our own applications under it&amp;#39;s successor, the &lt;a href="https://resources.mygov.scot/alpha/service-standard/digital-scotland-service-standard/"&gt;Digital Scotland Service Standard&lt;/a&gt;, we were interested in discovering any lessons they had learned along the way. It was a really useful visit and we left with a lot to think about and to take in to our planning sessions.&lt;/p&gt;
+&lt;h2 id="tha-thu-sgoinneil-is-toil-leam-cèic-agus-cofaidh"&gt;Tha thu sgoinneil! Is toil leam cèic agus cofaidh.&lt;/h2&gt;
+&lt;p&gt;The rest of the week, as if you couldn&amp;#39;t guess, has been taken up with learning &lt;a href="https://www.duolingo.com/course/gd/en/Learn-Scottish%20Gaelic"&gt;Gaelic with Duolingo&lt;/a&gt;. &lt;a href="https://twitter.com/DailyGael"&gt;The Daily Gael&lt;/a&gt; set up &lt;a href="https://twitter.com/ScotsGaelicDuo"&gt;a campaign&lt;/a&gt; back in February to get Duolingo to support Gaelic learners with a course, and in November they &lt;a href="https://twitter.com/duolingo/status/1199779779278491651"&gt;went live&lt;/a&gt;. Ever since, I&amp;#39;ve been logging in everyday to get my practice in. Hopefully, I&amp;#39;ll soon be able to impress my office mates from &lt;a href="https://twitter.com/bordnagaidhlig1"&gt;Bòrd na Gàidhlig&lt;/a&gt; at the tea point with a bit of &amp;quot;Am bu toil leat cofaidh?&amp;quot;&lt;/p&gt;
+&lt;h2 id="oidhche-mhath-tìoraidh"&gt;Oidhche mhath, tìoraidh!&lt;/h2&gt;
+
+  &lt;/article&gt;
+  &lt;nav&gt;
+    &lt;a class="previous" href="/weeknotes-003" title="Weeknotes 003"&gt;Previous &amp;#x21D2;&lt;/a&gt;
+    &lt;a class="home" href="/"&gt;Home&lt;/a&gt;
+  &lt;/nav&gt;
+&lt;/body&gt;
+
+&lt;/html&gt;
+</content>
+  </entry>
+  <entry>
+    <title>Weeknotes 003</title>
+    <updated>2019-12-08T00:00:00.000Z</updated>
+    <content>&lt;!doctype html&gt;
+&lt;html&gt;
+
+&lt;head&gt;
+  &lt;title&gt;Weeknotes 003&lt;/title&gt;
+  &lt;style&gt;
+      html {
+          font-size: 19px;
+          line-height: 32px;
+          font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+          background: #f8f8f8;
+          color: #444;
+      }
+  
+      article, nav {
+          max-width: 60ch;
+          margin-left: auto;
+          margin-right: auto;
+          text-align: justify;
+          hyphens: auto;
+      }
+  
+      nav {
+          display: grid;
+          grid-template-columns: 1fr 1fr 1fr;
+      }
+      .next {
+          grid-column: 1;
+          grid-row: 1;
+          text-align: left;
+      }
+      .home {
+          grid-column: 2;
+          grid-row: 1;
+          text-align: center;
+      }
+      .previous {
+          grid-column: 3;
+          grid-row: 1;
+          text-align: right;
+      }
+  
+      h1,
+      h2,
+      h3 {
+          font-variant-caps: small-caps;
+      }
+  
+      h1 {
+          font-size: 2rem;
+          line-height: 3.08rem;
+      }
+  
+      h2 {
+          font-size: 1.5rem;
+          line-height: 2.31rem;
+      }
+  
+      h3 {
+          font-size: 1.25rem;
+          line-height: 1.925rem;
+      }
+  
+      pre&gt;code {
+          font-size: 0.9rem;
+      }
+  
+      pre {
+          padding:0.75rem;
+      }
+  
+      img,
+      table,
+      pre {
+          background: white;
+          border: 1px solid black;
+      }
+  
+      @media (max-width: 109.99ch) {
+  
+          img,
+          table,
+          pre {
+              max-width: 100%;
+          }
+      }
+  
+      @media (min-width: 110ch) {
+  
+          img,
+          table,
+          pre {
+              margin-left: -10ch;
+              width: 80ch;
+          }
+      }
+  &lt;/style&gt;
+  &lt;link rel="stylesheet" href="/css/highlight.min.css"&gt;
+  &lt;link rel="alternate" type="application/atom+xml" href="/feed/atom/index.xml" /&gt;
+&lt;/head&gt;
+
+&lt;body&gt;
+  &lt;nav&gt;
+    &lt;a class="next" href="/weeknotes-004" title="Weeknotes 004"&gt;&amp;#x21D0; Next&lt;/a&gt;
+    &lt;a class="previous" href="/weeknotes-002" title="Weeknotes 002"&gt;Previous &amp;#x21D2;&lt;/a&gt;
+    &lt;header class="home"&gt;&lt;a href="/"&gt;MikeCoats.com&lt;/a&gt;&lt;/header&gt;
+  &lt;/nav&gt;
+  &lt;article&gt;
+    &lt;h1 id="weeknotes-for-2nd-december-2019---8th-december-2019"&gt;Weeknotes for 2nd December 2019 - 8th December 2019&lt;/h1&gt;
+&lt;p&gt;In an effort to keep my blogging momentum up, here&amp;#39;s my third consecutive &lt;a href="https://twitter.com/hashtag/weeknotes"&gt;#weeknotes&lt;/a&gt; post. As in past weeks, I&amp;#39;ll be rounding up any of the interesting things I&amp;#39;ve been searching for on the internet.&lt;/p&gt;
+&lt;h2 id="advent-of-code"&gt;&lt;code&gt;advent of code&lt;/code&gt;&lt;/h2&gt;
+&lt;p&gt;For the &lt;a href="https://adventofcode.com/events"&gt;past few years&lt;/a&gt;, every December, &lt;a href="http://was.tl/"&gt;Eric Wastl&lt;/a&gt; has run a series of coding challenges called &lt;a href="https://adventofcode.com/"&gt;Advent of Code&lt;/a&gt;. These work like an Advent Calendar, with a new challenge becoming available each day. They can be solved using any tools or programming languages you want, so I have chosen NodeJS &amp;amp; regular JS to keep the tooling to a minimum. I started off strongly, but I&amp;#39;ve not had enough time to dedicate to it yet and I&amp;#39;ve started running behind. To keep an eye on my progess, you can follow my &lt;a href="https://github.com/MikeCoats/advent-of-code"&gt;GitHub repo, here&lt;/a&gt;.&lt;/p&gt;
+&lt;h2 id="mdn-reduce--mdn-biggest-number"&gt;&lt;code&gt;mdn reduce&lt;/code&gt; &amp;amp;&amp;amp; &lt;code&gt;mdn biggest number&lt;/code&gt;&lt;/h2&gt;
+&lt;p&gt;One of the &lt;a href="https://adventofcode.com/2019/day/3"&gt;Advent of Code challenges&lt;/a&gt; had us searching for the smallest number in a list of results. My favorite aspect of programming in JavaScript over many other languages is it&amp;#39;s ability to work with lists and arrays, gained from its functional programming roots. This lets us process arrays using concepts like &lt;code&gt;map&lt;/code&gt; and &lt;code&gt;reduce&lt;/code&gt; giving us the following snippet for retrieving the smallest item from a list.&lt;/p&gt;
+&lt;pre&gt;&lt;code class="hljs js"&gt;&lt;span class="hljs-built_in"&gt;console&lt;/span&gt;.log([&lt;span class="hljs-number"&gt;1&lt;/span&gt;, &lt;span class="hljs-number"&gt;2&lt;/span&gt;, &lt;span class="hljs-number"&gt;3&lt;/span&gt;, &lt;span class="hljs-number"&gt;4&lt;/span&gt;, &lt;span class="hljs-number"&gt;5&lt;/span&gt;].reduce(
+    &lt;span class="hljs-function"&gt;(&lt;span class="hljs-params"&gt;prev, curr&lt;/span&gt;) =&amp;gt;&lt;/span&gt; &lt;span class="hljs-built_in"&gt;Math&lt;/span&gt;.min(prev, curr),
+    &lt;span class="hljs-built_in"&gt;Number&lt;/span&gt;.MAX_VALUE));&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;I used &lt;code&gt;Number.MAX_VALUE&lt;/code&gt; as the &lt;code&gt;initalValue&lt;/code&gt; in the reduce call as that&amp;#39;s the largest number JavaScript can hold; any other given value must be smaller than it, making it an ideal starting point for finding minimums in a list. &lt;code&gt;Number.POSITIVE_INFINITY&lt;/code&gt; is also available, and could even be a better choice due to the Number.isFinite() method to make sure we&amp;#39;ve actually found a smaller number.&lt;/p&gt;
+&lt;h2 id="mdn-spread-operator-array-copy"&gt;&lt;code&gt;mdn spread operator array copy&lt;/code&gt;&lt;/h2&gt;
+&lt;p&gt;When I was prototyping an answer for another challenge, I found myself needing to create a copy of an array, not just a reference to it, and the &lt;a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Spread_syntax"&gt;spread operator&lt;/a&gt; is great for that. It creates a new array with all of the original array members contained within.&lt;/p&gt;
+&lt;pre&gt;&lt;code class="hljs js"&gt;&lt;span class="hljs-keyword"&gt;const&lt;/span&gt; testArray1 = [&lt;span class="hljs-number"&gt;1&lt;/span&gt;, &lt;span class="hljs-number"&gt;2&lt;/span&gt;, &lt;span class="hljs-number"&gt;3&lt;/span&gt;, &lt;span class="hljs-number"&gt;4&lt;/span&gt;, &lt;span class="hljs-number"&gt;5&lt;/span&gt;];
+
+&lt;span class="hljs-keyword"&gt;const&lt;/span&gt; testArray2 = testArray1;
+testArray2.push(&lt;span class="hljs-string"&gt;'Everywhere'&lt;/span&gt;);
+
+&lt;span class="hljs-keyword"&gt;const&lt;/span&gt; testArray3 = [...testArray1];
+testArray3.push(&lt;span class="hljs-string"&gt;'Just Here'&lt;/span&gt;);
+
+&lt;span class="hljs-built_in"&gt;console&lt;/span&gt;.log(testArray1); &lt;span class="hljs-comment"&gt;// [ 1, 2, 3, 4, 5, 'Everywhere' ]&lt;/span&gt;
+&lt;span class="hljs-built_in"&gt;console&lt;/span&gt;.log(testArray2); &lt;span class="hljs-comment"&gt;// [ 1, 2, 3, 4, 5, 'Everywhere' ]&lt;/span&gt;
+&lt;span class="hljs-built_in"&gt;console&lt;/span&gt;.log(testArray3); &lt;span class="hljs-comment"&gt;// [ 1, 2, 3, 4, 5, 'Everywhere', 'Just Here' ]&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;
+
+&lt;h2 id="git-change-old-commit-messages"&gt;&lt;code&gt;git change old commit messages&lt;/code&gt;&lt;/h2&gt;
+&lt;p&gt;Working as a full-stack developer often means fixing bugs or adding features that cross both the front-end and back-end sytems. At work, we follow &lt;a href="https://chris.beams.io/posts/git-commit/"&gt;Chris Beams&amp;#39; seven rules&lt;/a&gt; for git commit messages, which means ending our messages with references to the issues that the piece of work was for. Jumping between different repos for front and back-ends can result in the front-end commits being tagged with the back-end issues and vice-versa. To fix this, and re-write a series of commit messages, you can take advantage of git&amp;#39;s interactive rebase mode, and rewrite the last, say, 3 messages by using the following command.&lt;/p&gt;
+&lt;pre&gt;&lt;code class="hljs sh"&gt;git rebase -i HEAD~3&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;You will then be presented with a summary listing those commits.&lt;/p&gt;
+&lt;pre&gt;&lt;code class="hljs"&gt;pick &lt;span class="hljs-number"&gt;55f&lt;/span&gt;9d3e Advent of Code &lt;span class="hljs-number"&gt;2018&lt;/span&gt;, Day &lt;span class="hljs-number"&gt;1&lt;/span&gt;, Stars &lt;span class="hljs-number"&gt;1&lt;/span&gt; &amp;amp; &lt;span class="hljs-number"&gt;2&lt;/span&gt;
+pick d577864 Advent of Code &lt;span class="hljs-number"&gt;2019&lt;/span&gt;, Day &lt;span class="hljs-number"&gt;2&lt;/span&gt;, Star &lt;span class="hljs-number"&gt;1&lt;/span&gt;
+pick &lt;span class="hljs-number"&gt;62&lt;/span&gt;de55e Advent of Code &lt;span class="hljs-number"&gt;2019&lt;/span&gt;, Day &lt;span class="hljs-number"&gt;2&lt;/span&gt;, Star &lt;span class="hljs-number"&gt;2&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;Changing each of those &lt;code&gt;pick&lt;/code&gt;s (which would just use the commit as-is) to &lt;code&gt;reword&lt;/code&gt;s tells git to accept the code changes, but re-write the commit messages, allowing you to fix your incorrect issue references.&lt;/p&gt;
+&lt;pre&gt;&lt;code class="hljs"&gt;reword &lt;span class="hljs-number"&gt;55f&lt;/span&gt;9d3e Advent of Code &lt;span class="hljs-number"&gt;2018&lt;/span&gt;, Day &lt;span class="hljs-number"&gt;1&lt;/span&gt;, Stars &lt;span class="hljs-number"&gt;1&lt;/span&gt; &amp;amp; &lt;span class="hljs-number"&gt;2&lt;/span&gt;
+reword d577864 Advent of Code &lt;span class="hljs-number"&gt;2019&lt;/span&gt;, Day &lt;span class="hljs-number"&gt;2&lt;/span&gt;, Star &lt;span class="hljs-number"&gt;1&lt;/span&gt;
+reword &lt;span class="hljs-number"&gt;62&lt;/span&gt;de55e Advent of Code &lt;span class="hljs-number"&gt;2019&lt;/span&gt;, Day &lt;span class="hljs-number"&gt;2&lt;/span&gt;, Star &lt;span class="hljs-number"&gt;2&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;
+
+&lt;h2 id="discussion"&gt;Discussion&lt;/h2&gt;
+&lt;p&gt;If you want to leave a comment or discuss this post, please reply to my tweet below!&lt;/p&gt;
+&lt;p&gt;&lt;a href="https://twitter.com/MikeCoatsDotCom/status/1204004148213104640"&gt;@MikeCoatsDotCom/1204004148213104640&lt;/a&gt;&lt;/p&gt;
+
+  &lt;/article&gt;
+  &lt;nav&gt;
+    &lt;a class="next" href="/weeknotes-004" title="Weeknotes 004"&gt;&amp;#x21D0; Next&lt;/a&gt;
+    &lt;a class="previous" href="/weeknotes-002" title="Weeknotes 002"&gt;Previous &amp;#x21D2;&lt;/a&gt;
+    &lt;a class="home" href="/"&gt;Home&lt;/a&gt;
+  &lt;/nav&gt;
+&lt;/body&gt;
+
+&lt;/html&gt;
+</content>
+  </entry>
+  <entry>
+    <title>Weeknotes 002</title>
+    <updated>2019-12-02T00:00:00.000Z</updated>
+    <content>&lt;!doctype html&gt;
+&lt;html&gt;
+
+&lt;head&gt;
+  &lt;title&gt;Weeknotes 002&lt;/title&gt;
+  &lt;style&gt;
+      html {
+          font-size: 19px;
+          line-height: 32px;
+          font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+          background: #f8f8f8;
+          color: #444;
+      }
+  
+      article, nav {
+          max-width: 60ch;
+          margin-left: auto;
+          margin-right: auto;
+          text-align: justify;
+          hyphens: auto;
+      }
+  
+      nav {
+          display: grid;
+          grid-template-columns: 1fr 1fr 1fr;
+      }
+      .next {
+          grid-column: 1;
+          grid-row: 1;
+          text-align: left;
+      }
+      .home {
+          grid-column: 2;
+          grid-row: 1;
+          text-align: center;
+      }
+      .previous {
+          grid-column: 3;
+          grid-row: 1;
+          text-align: right;
+      }
+  
+      h1,
+      h2,
+      h3 {
+          font-variant-caps: small-caps;
+      }
+  
+      h1 {
+          font-size: 2rem;
+          line-height: 3.08rem;
+      }
+  
+      h2 {
+          font-size: 1.5rem;
+          line-height: 2.31rem;
+      }
+  
+      h3 {
+          font-size: 1.25rem;
+          line-height: 1.925rem;
+      }
+  
+      pre&gt;code {
+          font-size: 0.9rem;
+      }
+  
+      pre {
+          padding:0.75rem;
+      }
+  
+      img,
+      table,
+      pre {
+          background: white;
+          border: 1px solid black;
+      }
+  
+      @media (max-width: 109.99ch) {
+  
+          img,
+          table,
+          pre {
+              max-width: 100%;
+          }
+      }
+  
+      @media (min-width: 110ch) {
+  
+          img,
+          table,
+          pre {
+              margin-left: -10ch;
+              width: 80ch;
+          }
+      }
+  &lt;/style&gt;
+  &lt;link rel="stylesheet" href="/css/highlight.min.css"&gt;
+  &lt;link rel="alternate" type="application/atom+xml" href="/feed/atom/index.xml" /&gt;
+&lt;/head&gt;
+
+&lt;body&gt;
+  &lt;nav&gt;
+    &lt;a class="next" href="/weeknotes-003" title="Weeknotes 003"&gt;&amp;#x21D0; Next&lt;/a&gt;
+    &lt;a class="previous" href="/weeknotes-001" title="Weeknotes 001"&gt;Previous &amp;#x21D2;&lt;/a&gt;
+    &lt;header class="home"&gt;&lt;a href="/"&gt;MikeCoats.com&lt;/a&gt;&lt;/header&gt;
+  &lt;/nav&gt;
+  &lt;article&gt;
+    &lt;h1 id="weeknotes-for-25th-november-2019---1st-december-2019"&gt;Weeknotes for 25th November 2019 - 1st December 2019&lt;/h1&gt;
+&lt;p&gt;For my second &lt;a href="https://twitter.com/hashtag/weeknotes"&gt;#weeknotes&lt;/a&gt; blogpost, I&amp;#39;ve continued with last weeks &amp;quot;theme&amp;quot; of collecting up my browser searches and publishing the interesting bits. I spent most of my time this week either in meetings or at home waiting for a heating engineer, so I didn&amp;#39;t actually have much time to do any searching for cool projects and instead I just ticked along some existing projects.&lt;/p&gt;
+&lt;h2 id="vscode-browser--code-server"&gt;&lt;code&gt;vscode browser&lt;/code&gt; &amp;amp; &lt;code&gt;code-server&lt;/code&gt;&lt;/h2&gt;
+&lt;p&gt;As part of my &lt;a href="/weeknotes-001/#jess-frazelle-docker-firefox-vscode-x11-forwarding--web-vnc"&gt;ongoing effort&lt;/a&gt; on turning an iPad into a &amp;#39;proper&amp;#39; computer for development, I continued searching for a way to run an IDE like vscode remotely from my home server. This week I came across the &lt;a href="https://github.com/cdr/code-server"&gt;code-server&lt;/a&gt; project which runs a &amp;#39;full&amp;#39; copy of vscode in a browser tab. Interestingly, it can be run in a docker container and connected over an HTTPS reverse proxy, providing a secure connection to an editor hosted on my own server.&lt;/p&gt;
+&lt;p&gt;To test this program out, I set it up as a container on my laptop and launched it in Firefox. I then put the tab in fullscreen mode and used it to edit this blog post. It worked! It&amp;#39;s not quite the same as running the editor on my server and editing on the iPad, but it&amp;#39;s getting pretty close. I even managed to bring up the interface on my iPhone and enter some text, but the small display, coupled with the on-screen keyboard meant it wasn&amp;#39;t &lt;em&gt;really&lt;/em&gt; a go-er.&lt;/p&gt;
+&lt;h2 id="logitech-slim-folio--brydge-keyboard"&gt;&lt;code&gt;logitech slim folio&lt;/code&gt; &amp;amp; &lt;code&gt;brydge keyboard&lt;/code&gt;&lt;/h2&gt;
+&lt;p&gt;The iPad&amp;#39;s on-screen keyboard takes up a fair amount of vertical space and isn&amp;#39;t really suitable for long typing sessions, especially for coding with all of the required alternative characters, etc. Really, I&amp;#39;m on the lookout for a physical keyboard to go along with the iPad. I&amp;#39;ve pretty much dismissed Apple&amp;#39;s Smart Keyboard straight away as it has zero key travel. I thought it felt terrible after 1-2 minutes use in the Apple Store, so I can only imagine I&amp;#39;ll hate it even more after any serious coding sessions. I also spend a lot of my time typing on my lap and I don&amp;#39;t like how flimsy the &amp;#39;laptop&amp;#39; mode appears. It just seems a bit too &amp;#39;floppy&amp;#39; for my liking.&lt;/p&gt;
+&lt;p&gt;To work around this, I&amp;#39;ve done some searching and disovered the &lt;a href="https://www.logitech.com/en-gb/product/slim-folio-pro"&gt;Logitech Slim Folio Pro&lt;/a&gt; and the &lt;a href="https://www.brydge.co.uk/products/brydge-for-ipad-pro-2018?variant=19733130215535"&gt;Brydge Pro&lt;/a&gt;. Both of these devices appear to do what I want, but both appear to have some tradeoffs when put head-to-head with one-another. I&amp;#39;ll need to see if any shops near me have some in stock and get a hands-on test with them, but until then I&amp;#39;ll just have to check out any reviews I can find.&lt;/p&gt;
+&lt;h2 id="discussion"&gt;Discussion&lt;/h2&gt;
+&lt;p&gt;If you want to leave a comment or discuss this post, please reply to my tweet below!&lt;/p&gt;
+&lt;p&gt;&lt;a href="https://twitter.com/MikeCoatsDotCom/status/1201630572885561345"&gt;@MikeCoatsDotCom/1201630572885561345&lt;/a&gt;&lt;/p&gt;
+
+  &lt;/article&gt;
+  &lt;nav&gt;
+    &lt;a class="next" href="/weeknotes-003" title="Weeknotes 003"&gt;&amp;#x21D0; Next&lt;/a&gt;
+    &lt;a class="previous" href="/weeknotes-001" title="Weeknotes 001"&gt;Previous &amp;#x21D2;&lt;/a&gt;
+    &lt;a class="home" href="/"&gt;Home&lt;/a&gt;
+  &lt;/nav&gt;
+&lt;/body&gt;
+
+&lt;/html&gt;
+</content>
+  </entry>
+  <entry>
+    <title>Weeknotes 001</title>
+    <updated>2019-11-25T00:00:00.000Z</updated>
+    <content>&lt;!doctype html&gt;
+&lt;html&gt;
+
+&lt;head&gt;
+  &lt;title&gt;Weeknotes 001&lt;/title&gt;
+  &lt;style&gt;
+      html {
+          font-size: 19px;
+          line-height: 32px;
+          font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+          background: #f8f8f8;
+          color: #444;
+      }
+  
+      article, nav {
+          max-width: 60ch;
+          margin-left: auto;
+          margin-right: auto;
+          text-align: justify;
+          hyphens: auto;
+      }
+  
+      nav {
+          display: grid;
+          grid-template-columns: 1fr 1fr 1fr;
+      }
+      .next {
+          grid-column: 1;
+          grid-row: 1;
+          text-align: left;
+      }
+      .home {
+          grid-column: 2;
+          grid-row: 1;
+          text-align: center;
+      }
+      .previous {
+          grid-column: 3;
+          grid-row: 1;
+          text-align: right;
+      }
+  
+      h1,
+      h2,
+      h3 {
+          font-variant-caps: small-caps;
+      }
+  
+      h1 {
+          font-size: 2rem;
+          line-height: 3.08rem;
+      }
+  
+      h2 {
+          font-size: 1.5rem;
+          line-height: 2.31rem;
+      }
+  
+      h3 {
+          font-size: 1.25rem;
+          line-height: 1.925rem;
+      }
+  
+      pre&gt;code {
+          font-size: 0.9rem;
+      }
+  
+      pre {
+          padding:0.75rem;
+      }
+  
+      img,
+      table,
+      pre {
+          background: white;
+          border: 1px solid black;
+      }
+  
+      @media (max-width: 109.99ch) {
+  
+          img,
+          table,
+          pre {
+              max-width: 100%;
+          }
+      }
+  
+      @media (min-width: 110ch) {
+  
+          img,
+          table,
+          pre {
+              margin-left: -10ch;
+              width: 80ch;
+          }
+      }
+  &lt;/style&gt;
+  &lt;link rel="stylesheet" href="/css/highlight.min.css"&gt;
+  &lt;link rel="alternate" type="application/atom+xml" href="/feed/atom/index.xml" /&gt;
+&lt;/head&gt;
+
+&lt;body&gt;
+  &lt;nav&gt;
+    &lt;a class="next" href="/weeknotes-002" title="Weeknotes 002"&gt;&amp;#x21D0; Next&lt;/a&gt;
+    &lt;a class="previous" href="/snh-missing-maps-mapathon" title="SNH Missing Maps Mapathon"&gt;Previous &amp;#x21D2;&lt;/a&gt;
+    &lt;header class="home"&gt;&lt;a href="/"&gt;MikeCoats.com&lt;/a&gt;&lt;/header&gt;
+  &lt;/nav&gt;
+  &lt;article&gt;
+    &lt;h1 id="weeknotes-for-18th-november-2019---24th-november-2019"&gt;Weeknotes for 18th November 2019 - 24th November 2019&lt;/h1&gt;
+&lt;p&gt;I&amp;#39;ve followed a few digital government folk like &lt;a href="https://twitter.com/edent"&gt;@edent&lt;/a&gt; on twitter for a while and seen their &lt;a href="https://twitter.com/hashtag/weeknotes"&gt;#weeknotes&lt;/a&gt; approach to blogging, so I&amp;#39;ve decided to dip my toe in and write a little post about what I&amp;#39;ve been up to this past week.&lt;/p&gt;
+&lt;p&gt;It can be difficult to remember everything you did if you don&amp;#39;t deliberately keep notes, but the one thing that was keeping notes all week was my browser history. Reviewing your browser searches can be quite enlightening, revealing things that tripped you up or that you needed help with.&lt;/p&gt;
+&lt;h2 id="roku-sdk-brightscript--windows-95-star-field"&gt;&lt;code&gt;roku sdk&lt;/code&gt;, &lt;code&gt;brightscript&lt;/code&gt; &amp;amp; &lt;code&gt;windows 95 star field&lt;/code&gt;&lt;/h2&gt;
+&lt;p&gt;On the 17th &lt;a href="https://twitter.com/nicolehe"&gt;Nicole He&lt;/a&gt; posted up &lt;a href="https://twitter.com/nicolehe/status/1196193647244578816"&gt;a thread on twitter&lt;/a&gt; showing the truly bizarre and &lt;strong&gt;kinda-probably-NSFW&lt;/strong&gt; collection of screensavers available for installation on Roku devices. I didn&amp;#39;t even realise that screensavers for your Roku were a thing or that custom ones were available. I immediately signed up for a developer account, of course, and started work on bringing a late 90&amp;#39;s classic back from the dead and on to my TV screen.&lt;/p&gt;
+&lt;h2 id="oracle-regular-expression--regexp_like"&gt;&lt;code&gt;oracle regular expression&lt;/code&gt; &amp;amp; &lt;code&gt;regexp_like&lt;/code&gt;&lt;/h2&gt;
+&lt;p&gt;We&amp;#39;re continually updating and upgrading our applications at &lt;a href="https://www.nature.scot"&gt;SNH&lt;/a&gt;, and an integral part of that work is data migration and management. I had to wrangle some &amp;#39;stringly-typed&amp;#39; numbers this week in our Oracle database and so I got an opportunity to flex my regular expression muscles. Luckily for me, it didn&amp;#39;t turn in to &lt;a href="http://regex.info/blog/2006-09-15/247"&gt;two problems&lt;/a&gt;.&lt;/p&gt;
+&lt;h2 id="angular-template-reference-variable-ngcontent-controlvalueaccessor--htmlinputelement"&gt;&lt;code&gt;Angular template reference variable&lt;/code&gt;, &lt;code&gt;ngcontent&lt;/code&gt;, &lt;code&gt;ControlValueAccessor&lt;/code&gt; &amp;amp; &lt;code&gt;HtmlInputElement&lt;/code&gt;&lt;/h2&gt;
+&lt;p&gt;At &lt;a href="https://www.nature.scot"&gt;SNH&lt;/a&gt;, we develop our applications like &lt;a href="https://sitelink.nature.scot"&gt;SiteLink&lt;/a&gt; using the &lt;a href="https://angular.io"&gt;Angular framework&lt;/a&gt;. To keep our UIs and UXs consistent between applications, I&amp;#39;ve been looking at what&amp;#39;s required to put our commonly re-used components in a library available for re-use across the organisation.&lt;/p&gt;
+&lt;h2 id="httpstatuses"&gt;&lt;code&gt;httpstatuses&lt;/code&gt;&lt;/h2&gt;
+&lt;p&gt;Creating and working with RESTful services mean you need to have a pretty decent knowledge of the HTTP status codes. I can never keep track of the higher-numbered 4xx errors, which is why I like &lt;a href="https://httpstatuses.com/"&gt;this HTTP Status Codes&lt;/a&gt; site.&lt;/p&gt;
+&lt;h2 id="metalsmith-handlebars-stringify--json-stringify-circular"&gt;&lt;code&gt;metalsmith&lt;/code&gt;, &lt;code&gt;handlebars stringify&lt;/code&gt; &amp;amp; &lt;code&gt;json stringify circular&lt;/code&gt;&lt;/h2&gt;
+&lt;p&gt;I&amp;#39;ve written this blog using the static site generator &lt;a href="https://metalsmith.io/"&gt;Metalsmith&lt;/a&gt; and to get to grips with the data structures it creates on its journey from markdown to HTML I was looking at a way to dump the current page&amp;#39;s object to the HTML. This brought to light an interesting point that &lt;code&gt;JSON.stringify&lt;/code&gt; cannot handle javascript objects that contain circular references, but &lt;code&gt;console.log&lt;/code&gt; can. Something to remember for the future!&lt;/p&gt;
+&lt;h2 id="unicode-arrow-html5-unicode--html5-semantic-elements-mdn-date-localedate"&gt;&lt;code&gt;unicode arrow&lt;/code&gt;, &lt;code&gt;html5 unicode&lt;/code&gt; &amp;amp; &lt;code&gt;html5 semantic elements&lt;/code&gt;, &lt;code&gt;mdn date&lt;/code&gt;, &lt;code&gt;localedate&lt;/code&gt;&lt;/h2&gt;
+&lt;p&gt;As part of my blog&amp;#39;s redesign I was looking at ways to embed forward and backward arrows for post-to-post navigation and how to get some &amp;#39;pretty&amp;#39; looking dates displayed on the home page. I can never remember the proper way to embed a hex reference to a unicode character in HTML. It&amp;#39;s &lt;code&gt;&amp;amp;#x????;&lt;/code&gt;, by the way.&lt;/p&gt;
+&lt;h2 id="remount-usb-rw--linux-mount-hfsplus-ignore-user"&gt;&lt;code&gt;remount usb rw&lt;/code&gt; &amp;amp; &lt;code&gt;linux mount hfsplus ignore user&lt;/code&gt;&lt;/h2&gt;
+&lt;p&gt;I was doing some tidying one evening and came across a couple of old USB memory sticks that I had no idea what, if anything, was on them. It turned out they were from back when I ran OS X/macOS on my laptop, so getting access to them to back up the files and wipe the drives took a little bit of effort.&lt;/p&gt;
+&lt;h2 id="jess-frazelle-docker-firefox-vscode-x11-forwarding--web-vnc"&gt;&lt;code&gt;jess frazelle docker firefox&lt;/code&gt;, &lt;code&gt;vscode x11 forwarding&lt;/code&gt; &amp;amp; &lt;code&gt;web vnc&lt;/code&gt;&lt;/h2&gt;
+&lt;p&gt;I&amp;#39;m a techie at heart, and I&amp;#39;m always on the look-out for new, hacky, ways to set up my environment. I&amp;#39;d love to be able to work properly from an iPad, and I&amp;#39;m 90% there with &lt;a href="https://www.panic.com/prompt/"&gt;Prompt&lt;/a&gt; connecting to my Linux server, but I&amp;#39;ve not got a good solution for very interactive GUI applications yet. I&amp;#39;ve followed &lt;a href="https://twitter.com/jessfraz"&gt;Jessie Frazelle&lt;/a&gt; on twitter for a few years and I could remember that she had written a blog post about running &lt;a href="https://blog.jessfraz.com/post/docker-containers-on-the-desktop/"&gt;desktop programs like Firefox in docker containers&lt;/a&gt;. If I could spin up an application in a container then I could deploy that to my Linux server and use it as headless terminal.&lt;/p&gt;
+&lt;p&gt;I managed to get &lt;a href="http://www.mochasoft.dk/iphone_x11.htm"&gt;Mocha X11&lt;/a&gt; on my iPhone to connect to my Debian laptop and launch vscode from there to display on my phone&amp;#39;s screen. It didn&amp;#39;t appear to work at first, as each time I connected using &lt;a href="http://www.mochasoft.dk/iphone_x11.htm"&gt;Mocha&lt;/a&gt;, the new copy of vscode appeared on my laptop screen and not my phone screen. I eventually realised that vscode was sharing some sort of &amp;#39;session&amp;#39; and launching subsequent copies as extra windows on the first copy - not as wholly new processes. Killing all vscode instances and trying once again from the phone worked a treat.&lt;/p&gt;
+&lt;p&gt;It turns out that vscode isn&amp;#39;t a great application to run over X11, probably because it&amp;#39;s an electron app, so rendering is handled in a very non-X11-efficient way. I tried launching &lt;a href="https://keepassxc.org/"&gt;KeePassXC&lt;/a&gt; instead and it performed a lot better.&lt;/p&gt;
+&lt;p&gt;In my further searching around the idea of &lt;code&gt;web vnc&lt;/code&gt; I came across &lt;a href="https://guacamole.apache.org/"&gt;Apache Guacamole&lt;/a&gt;, which looks quite promising as a method of accessing applications remotely. If I can set it up as some kind of gateway to allow access in to my dockerised desktop applications, I might be on to something.&lt;/p&gt;
+&lt;h2 id="discussion"&gt;Discussion&lt;/h2&gt;
+&lt;p&gt;If you want to leave a comment or discuss this post, please reply to my tweet below!&lt;/p&gt;
+&lt;p&gt;&lt;a href="https://twitter.com/MikeCoatsDotCom/status/1199053366430711811"&gt;@MikeCoatsDotCom/1199053366430711811&lt;/a&gt;&lt;/p&gt;
+
+  &lt;/article&gt;
+  &lt;nav&gt;
+    &lt;a class="next" href="/weeknotes-002" title="Weeknotes 002"&gt;&amp;#x21D0; Next&lt;/a&gt;
+    &lt;a class="previous" href="/snh-missing-maps-mapathon" title="SNH Missing Maps Mapathon"&gt;Previous &amp;#x21D2;&lt;/a&gt;
+    &lt;a class="home" href="/"&gt;Home&lt;/a&gt;
+  &lt;/nav&gt;
+&lt;/body&gt;
+
+&lt;/html&gt;
+</content>
+  </entry>
+  <entry>
+    <title>SNH Missing Maps Mapathon</title>
+    <updated>2018-12-31T00:00:00.000Z</updated>
+    <content>&lt;!doctype html&gt;
+&lt;html&gt;
+
+&lt;head&gt;
+  &lt;title&gt;SNH Missing Maps Mapathon&lt;/title&gt;
+  &lt;style&gt;
+      html {
+          font-size: 19px;
+          line-height: 32px;
+          font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+          background: #f8f8f8;
+          color: #444;
+      }
+  
+      article, nav {
+          max-width: 60ch;
+          margin-left: auto;
+          margin-right: auto;
+          text-align: justify;
+          hyphens: auto;
+      }
+  
+      nav {
+          display: grid;
+          grid-template-columns: 1fr 1fr 1fr;
+      }
+      .next {
+          grid-column: 1;
+          grid-row: 1;
+          text-align: left;
+      }
+      .home {
+          grid-column: 2;
+          grid-row: 1;
+          text-align: center;
+      }
+      .previous {
+          grid-column: 3;
+          grid-row: 1;
+          text-align: right;
+      }
+  
+      h1,
+      h2,
+      h3 {
+          font-variant-caps: small-caps;
+      }
+  
+      h1 {
+          font-size: 2rem;
+          line-height: 3.08rem;
+      }
+  
+      h2 {
+          font-size: 1.5rem;
+          line-height: 2.31rem;
+      }
+  
+      h3 {
+          font-size: 1.25rem;
+          line-height: 1.925rem;
+      }
+  
+      pre&gt;code {
+          font-size: 0.9rem;
+      }
+  
+      pre {
+          padding:0.75rem;
+      }
+  
+      img,
+      table,
+      pre {
+          background: white;
+          border: 1px solid black;
+      }
+  
+      @media (max-width: 109.99ch) {
+  
+          img,
+          table,
+          pre {
+              max-width: 100%;
+          }
+      }
+  
+      @media (min-width: 110ch) {
+  
+          img,
+          table,
+          pre {
+              margin-left: -10ch;
+              width: 80ch;
+          }
+      }
+  &lt;/style&gt;
+  &lt;link rel="stylesheet" href="/css/highlight.min.css"&gt;
+  &lt;link rel="alternate" type="application/atom+xml" href="/feed/atom/index.xml" /&gt;
+&lt;/head&gt;
+
+&lt;body&gt;
+  &lt;nav&gt;
+    &lt;a class="next" href="/weeknotes-001" title="Weeknotes 001"&gt;&amp;#x21D0; Next&lt;/a&gt;
+    &lt;a class="previous" href="/personal-weather-forecast" title="Personal Weather Forecast"&gt;Previous &amp;#x21D2;&lt;/a&gt;
+    &lt;header class="home"&gt;&lt;a href="/"&gt;MikeCoats.com&lt;/a&gt;&lt;/header&gt;
+  &lt;/nav&gt;
+  &lt;article&gt;
+    &lt;h1 id="missing-maps-mapathon--snh"&gt;Missing Maps #mapathon @ SNH&lt;/h1&gt;
+&lt;p&gt;One of the perks of working for &lt;a href="https://www.nature.scot/"&gt;Scottish Natural Heritage&lt;/a&gt; is that they encourage you to take a day per year and volunteer on a charitable project. This year some of the staff from &lt;a href="https://twitter.com/SNH_Maps"&gt;our GIS team&lt;/a&gt; organised a number of &lt;a href="http://www.missingmaps.org/"&gt;Missing Maps&lt;/a&gt; events, one of which I was lucky enough to find a place on. In case you&amp;#39;ve never heard of Missing Maps or the work they do, I&amp;#39;ve included a short video here.&lt;/p&gt;
+&lt;p&gt;&lt;a href="https://www.youtube.com/watch?v=wEEnOqmVfqM"&gt;&lt;img src="youtube.png" alt="Two Minute Tutorials: What is Missing Maps?"&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;We kicked off the event by getting everyone set-up with accounts on &lt;a href="https://www.openstreetmap.org/"&gt;OpenStreetMap&lt;/a&gt; and watched a couple of quick video tutorials to get us up to speed with the kind of tasks we&amp;#39;d be spending the day completing. We then looked at the beginner level projects available on the &lt;a href="https://tasks.hotosm.org/"&gt;HOT Tasking Manager&lt;/a&gt; and decided to work together on &lt;a href="https://tasks.hotosm.org/project/5529"&gt;Project #5529&lt;/a&gt;. When we picked it, it was a high priority project with very little mapping completed on it. We felt we could make a real impact here by dedicating 19 volunteers&amp;#39; time across both morning and afternoon sessions.&lt;/p&gt;
+&lt;p&gt;Tina from the GIS team posted to their twitter account throughout the day, including the following photo of us all deeply focussed on spotting and annotating buildings across Tanzania.&lt;/p&gt;
+&lt;p&gt;&lt;a href="https://twitter.com/SNH_Maps/status/1072805390704893952"&gt;@SNH_Maps/1072805390704893952&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;As a team, we managed to contribute a 12% boost to the project&amp;#39;s mapping goal and even more importantly there are an extra 19 trained and engaged volunteers out there contributing to the project in their spare time.&lt;/p&gt;
+&lt;p&gt;The idea of contributing to OpenStreetMap can be quite intimidating to new users, particularly when you know people will be referring to your maps in the field to assist in their humanitarian works, but it&amp;#39;s really not that difficult and you get to make a real difference.&lt;/p&gt;
+&lt;p&gt;If you&amp;#39;re still aprehensive, Missing Maps have &lt;a href="http://www.missingmaps.org/events/"&gt;a list of public events&lt;/a&gt; similar to our day on their website.&lt;/p&gt;
+&lt;h2 id="discussion"&gt;Discussion&lt;/h2&gt;
+&lt;p&gt;If you want to leave a comment or discuss this post, please reply to my tweet below!&lt;/p&gt;
+&lt;p&gt;&lt;a href="https://twitter.com/MikeCoatsDotCom/status/1079791682709786624"&gt;@MikeCoatsDotCom/1079791682709786624&lt;/a&gt;&lt;/p&gt;
+
+  &lt;/article&gt;
+  &lt;nav&gt;
+    &lt;a class="next" href="/weeknotes-001" title="Weeknotes 001"&gt;&amp;#x21D0; Next&lt;/a&gt;
+    &lt;a class="previous" href="/personal-weather-forecast" title="Personal Weather Forecast"&gt;Previous &amp;#x21D2;&lt;/a&gt;
+    &lt;a class="home" href="/"&gt;Home&lt;/a&gt;
+  &lt;/nav&gt;
+&lt;/body&gt;
+
+&lt;/html&gt;
+</content>
+  </entry>
+  <entry>
+    <title>Personal Weather Forecast</title>
+    <updated>2018-12-29T00:00:00.000Z</updated>
+    <content>&lt;!doctype html&gt;
+&lt;html&gt;
+
+&lt;head&gt;
+  &lt;title&gt;Personal Weather Forecast&lt;/title&gt;
+  &lt;style&gt;
+      html {
+          font-size: 19px;
+          line-height: 32px;
+          font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+          background: #f8f8f8;
+          color: #444;
+      }
+  
+      article, nav {
+          max-width: 60ch;
+          margin-left: auto;
+          margin-right: auto;
+          text-align: justify;
+          hyphens: auto;
+      }
+  
+      nav {
+          display: grid;
+          grid-template-columns: 1fr 1fr 1fr;
+      }
+      .next {
+          grid-column: 1;
+          grid-row: 1;
+          text-align: left;
+      }
+      .home {
+          grid-column: 2;
+          grid-row: 1;
+          text-align: center;
+      }
+      .previous {
+          grid-column: 3;
+          grid-row: 1;
+          text-align: right;
+      }
+  
+      h1,
+      h2,
+      h3 {
+          font-variant-caps: small-caps;
+      }
+  
+      h1 {
+          font-size: 2rem;
+          line-height: 3.08rem;
+      }
+  
+      h2 {
+          font-size: 1.5rem;
+          line-height: 2.31rem;
+      }
+  
+      h3 {
+          font-size: 1.25rem;
+          line-height: 1.925rem;
+      }
+  
+      pre&gt;code {
+          font-size: 0.9rem;
+      }
+  
+      pre {
+          padding:0.75rem;
+      }
+  
+      img,
+      table,
+      pre {
+          background: white;
+          border: 1px solid black;
+      }
+  
+      @media (max-width: 109.99ch) {
+  
+          img,
+          table,
+          pre {
+              max-width: 100%;
+          }
+      }
+  
+      @media (min-width: 110ch) {
+  
+          img,
+          table,
+          pre {
+              margin-left: -10ch;
+              width: 80ch;
+          }
+      }
+  &lt;/style&gt;
+  &lt;link rel="stylesheet" href="/css/highlight.min.css"&gt;
+  &lt;link rel="alternate" type="application/atom+xml" href="/feed/atom/index.xml" /&gt;
+&lt;/head&gt;
+
+&lt;body&gt;
+  &lt;nav&gt;
+    &lt;a class="next" href="/snh-missing-maps-mapathon" title="SNH Missing Maps Mapathon"&gt;&amp;#x21D0; Next&lt;/a&gt;
+    &lt;a class="previous" href="/trump-is-big-boss" title="Trump is Big Boss"&gt;Previous &amp;#x21D2;&lt;/a&gt;
+    &lt;header class="home"&gt;&lt;a href="/"&gt;MikeCoats.com&lt;/a&gt;&lt;/header&gt;
+  &lt;/nav&gt;
+  &lt;article&gt;
+    &lt;h1 id="personal-weather-forecast"&gt;Personal Weather Forecast&lt;/h1&gt;
+&lt;p&gt;tl;dr Personal Weather Forecast is a small JavaScript program that mashes together Dark Sky&amp;#39;s API with Twilio&amp;#39;s APIs to produce a personally tailored weather forecast and sends it to you as a text message every morning. The source code is available as &lt;a href="https://github.com/MikeCoats/personal-weather-forecast"&gt;a project on GitHub, here&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;&lt;img src="notification.jpg" alt="Screenshot of an example notification"&gt;&lt;/p&gt;
+&lt;p&gt;If you want to receive your own personal weather forecast every morning...&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;check out the repository to a computer you&amp;#39;ll leave switched on—such as a DigitalOcean droplet, or a Raspberry Pi home server&lt;/li&gt;
+&lt;li&gt;create a script similar to the one below&lt;/li&gt;
+&lt;li&gt;save it somewhere accessible from your logged-in user on your server, such as &lt;code&gt;~/bin/forecast-sms&lt;/code&gt;.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;pre&gt;&lt;code class="hljs sh"&gt;&lt;span class="hljs-meta"&gt;#!/bin/sh
+&lt;/span&gt;
+&lt;span class="hljs-built_in"&gt;export&lt;/span&gt; DARKSKY_KEY=[your-darksky-key]
+&lt;span class="hljs-built_in"&gt;export&lt;/span&gt; DARKSKY_LATLONG=[the-location-for-the-forecast]
+&lt;span class="hljs-built_in"&gt;export&lt;/span&gt; TWILIO_ACCOUNT=[your-twilio-account-sid]
+&lt;span class="hljs-built_in"&gt;export&lt;/span&gt; TWILIO_TOKEN=[your-twilio-auth-token]
+&lt;span class="hljs-built_in"&gt;export&lt;/span&gt; TWILIO_FROM=[your-twilio-phone-number]
+&lt;span class="hljs-built_in"&gt;export&lt;/span&gt; TWILIO_TO=[your-destination-phone-number]
+
+&lt;span class="hljs-built_in"&gt;pushd&lt;/span&gt; /[repo-location]/personal-weather-forecast &amp;gt;/dev/null
+node main.js
+&lt;span class="hljs-built_in"&gt;popd&lt;/span&gt; &amp;gt;/dev/null&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;To make it run every morning, you should edit your user&amp;#39;s crontab which with the following command...&lt;/p&gt;
+&lt;pre&gt;&lt;code class="hljs sh"&gt;$ crontab -e&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;...and add the following line...&lt;/p&gt;
+&lt;pre&gt;&lt;code class="hljs"&gt;&lt;span class="hljs-symbol"&gt;0 &lt;/span&gt;&lt;span class="hljs-number"&gt;7&lt;/span&gt; * * &lt;span class="hljs-number"&gt;1&lt;/span&gt;-&lt;span class="hljs-number"&gt;5&lt;/span&gt; ~/bin/forecast-sms&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;...which references the location of the previously saved script. This cron entry means that every Monday to Friday morning at 7am you&amp;#39;ll receive your very own personal weather forecast!&lt;/p&gt;
+&lt;p&gt;&lt;img src="message.jpg" alt="Screenshot of an example message"&gt;&lt;/p&gt;
+&lt;h2 id="discussion"&gt;Discussion&lt;/h2&gt;
+&lt;p&gt;If you want to leave a comment or discuss this post, please reply to my tweet below!&lt;/p&gt;
+&lt;p&gt;&lt;a href="https://twitter.com/MikeCoatsDotCom/status/1052832221684477952"&gt;@MikeCoatsDotCom/1052832221684477952&lt;/a&gt;&lt;/p&gt;
+
+  &lt;/article&gt;
+  &lt;nav&gt;
+    &lt;a class="next" href="/snh-missing-maps-mapathon" title="SNH Missing Maps Mapathon"&gt;&amp;#x21D0; Next&lt;/a&gt;
+    &lt;a class="previous" href="/trump-is-big-boss" title="Trump is Big Boss"&gt;Previous &amp;#x21D2;&lt;/a&gt;
+    &lt;a class="home" href="/"&gt;Home&lt;/a&gt;
+  &lt;/nav&gt;
+&lt;/body&gt;
+
+&lt;/html&gt;
+</content>
+  </entry>
+  <entry>
+    <title>Trump is Big Boss</title>
+    <updated>2017-07-18T00:00:00.000Z</updated>
+    <content>&lt;!doctype html&gt;
+&lt;html&gt;
+
+&lt;head&gt;
+  &lt;title&gt;Trump is Big Boss&lt;/title&gt;
+  &lt;style&gt;
+      html {
+          font-size: 19px;
+          line-height: 32px;
+          font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+          background: #f8f8f8;
+          color: #444;
+      }
+  
+      article, nav {
+          max-width: 60ch;
+          margin-left: auto;
+          margin-right: auto;
+          text-align: justify;
+          hyphens: auto;
+      }
+  
+      nav {
+          display: grid;
+          grid-template-columns: 1fr 1fr 1fr;
+      }
+      .next {
+          grid-column: 1;
+          grid-row: 1;
+          text-align: left;
+      }
+      .home {
+          grid-column: 2;
+          grid-row: 1;
+          text-align: center;
+      }
+      .previous {
+          grid-column: 3;
+          grid-row: 1;
+          text-align: right;
+      }
+  
+      h1,
+      h2,
+      h3 {
+          font-variant-caps: small-caps;
+      }
+  
+      h1 {
+          font-size: 2rem;
+          line-height: 3.08rem;
+      }
+  
+      h2 {
+          font-size: 1.5rem;
+          line-height: 2.31rem;
+      }
+  
+      h3 {
+          font-size: 1.25rem;
+          line-height: 1.925rem;
+      }
+  
+      pre&gt;code {
+          font-size: 0.9rem;
+      }
+  
+      pre {
+          padding:0.75rem;
+      }
+  
+      img,
+      table,
+      pre {
+          background: white;
+          border: 1px solid black;
+      }
+  
+      @media (max-width: 109.99ch) {
+  
+          img,
+          table,
+          pre {
+              max-width: 100%;
+          }
+      }
+  
+      @media (min-width: 110ch) {
+  
+          img,
+          table,
+          pre {
+              margin-left: -10ch;
+              width: 80ch;
+          }
+      }
+  &lt;/style&gt;
+  &lt;link rel="stylesheet" href="/css/highlight.min.css"&gt;
+  &lt;link rel="alternate" type="application/atom+xml" href="/feed/atom/index.xml" /&gt;
+&lt;/head&gt;
+
+&lt;body&gt;
+  &lt;nav&gt;
+    &lt;a class="next" href="/personal-weather-forecast" title="Personal Weather Forecast"&gt;&amp;#x21D0; Next&lt;/a&gt;
+    &lt;a class="previous" href="/fork-your-own-repo" title="Fork Your Own Repo"&gt;Previous &amp;#x21D2;&lt;/a&gt;
+    &lt;header class="home"&gt;&lt;a href="/"&gt;MikeCoats.com&lt;/a&gt;&lt;/header&gt;
+  &lt;/nav&gt;
+  &lt;article&gt;
+    &lt;h1 id="trump-is-big-boss"&gt;Trump is Big Boss&lt;/h1&gt;
+&lt;p&gt;tl;dr Trump Is Big Boss is a silly little program that randomly generates fake tweet screenshots that attribute quotes from Metal Gear&amp;#39;s Big Boss to @realDonaldTrump.&lt;/p&gt;
+&lt;p&gt;&lt;img src="screenshot.png" alt="Example tweet generated by Trump is Big Boss"&gt;&lt;/p&gt;
+&lt;p&gt;The source code for the bot is &lt;a href="https://github.com/MikeCoats/trumps-bigboss-bot"&gt;shared as a project on GitHub&lt;/a&gt;, and the resulting tweets are &lt;a href="https://twitter.com/TrumpIsBigBoss"&gt;posted to the parody account here&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;This script is forked from my first proper Twitter bot, &lt;a href="/jeremy-kylebot"&gt;The Jeremy Kylebot&lt;/a&gt;. The quotes the bot uses to generate tweets were orginally ripped by the user &lt;a href="https://www.gamefaqs.com/community/NekuraHoka"&gt;Nekura_Hoka on GameFAQs&lt;/a&gt;, whose complete rip can be found on &lt;a href="https://www.gamefaqs.com/msx/578853-metal-gear/faqs/30618"&gt;the GameFAQs website&lt;/a&gt;.&lt;/p&gt;
+&lt;h2 id="examples"&gt;Examples&lt;/h2&gt;
+&lt;p&gt;&lt;a href="https://twitter.com/TrumpIsBigBoss/status/1070014885466132480"&gt;@TrumpIsBigBoss/1070014885466132480&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href="https://twitter.com/TrumpIsBigBoss/status/1069727993931722754"&gt;@TrumpIsBigBoss/1069727993931722754&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href="https://twitter.com/TrumpIsBigBoss/status/1069690246307168256"&gt;@TrumpIsBigBoss/1069690246307168256&lt;/a&gt;&lt;/p&gt;
+
+  &lt;/article&gt;
+  &lt;nav&gt;
+    &lt;a class="next" href="/personal-weather-forecast" title="Personal Weather Forecast"&gt;&amp;#x21D0; Next&lt;/a&gt;
+    &lt;a class="previous" href="/fork-your-own-repo" title="Fork Your Own Repo"&gt;Previous &amp;#x21D2;&lt;/a&gt;
+    &lt;a class="home" href="/"&gt;Home&lt;/a&gt;
+  &lt;/nav&gt;
+&lt;/body&gt;
+
+&lt;/html&gt;
+</content>
+  </entry>
+  <entry>
+    <title>Fork Your Own Repo</title>
+    <updated>2017-07-04T00:00:00.000Z</updated>
+    <content>&lt;!doctype html&gt;
+&lt;html&gt;
+
+&lt;head&gt;
+  &lt;title&gt;Fork Your Own Repo&lt;/title&gt;
+  &lt;style&gt;
+      html {
+          font-size: 19px;
+          line-height: 32px;
+          font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+          background: #f8f8f8;
+          color: #444;
+      }
+  
+      article, nav {
+          max-width: 60ch;
+          margin-left: auto;
+          margin-right: auto;
+          text-align: justify;
+          hyphens: auto;
+      }
+  
+      nav {
+          display: grid;
+          grid-template-columns: 1fr 1fr 1fr;
+      }
+      .next {
+          grid-column: 1;
+          grid-row: 1;
+          text-align: left;
+      }
+      .home {
+          grid-column: 2;
+          grid-row: 1;
+          text-align: center;
+      }
+      .previous {
+          grid-column: 3;
+          grid-row: 1;
+          text-align: right;
+      }
+  
+      h1,
+      h2,
+      h3 {
+          font-variant-caps: small-caps;
+      }
+  
+      h1 {
+          font-size: 2rem;
+          line-height: 3.08rem;
+      }
+  
+      h2 {
+          font-size: 1.5rem;
+          line-height: 2.31rem;
+      }
+  
+      h3 {
+          font-size: 1.25rem;
+          line-height: 1.925rem;
+      }
+  
+      pre&gt;code {
+          font-size: 0.9rem;
+      }
+  
+      pre {
+          padding:0.75rem;
+      }
+  
+      img,
+      table,
+      pre {
+          background: white;
+          border: 1px solid black;
+      }
+  
+      @media (max-width: 109.99ch) {
+  
+          img,
+          table,
+          pre {
+              max-width: 100%;
+          }
+      }
+  
+      @media (min-width: 110ch) {
+  
+          img,
+          table,
+          pre {
+              margin-left: -10ch;
+              width: 80ch;
+          }
+      }
+  &lt;/style&gt;
+  &lt;link rel="stylesheet" href="/css/highlight.min.css"&gt;
+  &lt;link rel="alternate" type="application/atom+xml" href="/feed/atom/index.xml" /&gt;
+&lt;/head&gt;
+
+&lt;body&gt;
+  &lt;nav&gt;
+    &lt;a class="next" href="/trump-is-big-boss" title="Trump is Big Boss"&gt;&amp;#x21D0; Next&lt;/a&gt;
+    &lt;a class="previous" href="/jeremy-kylebot" title="Jeremy Kylebot"&gt;Previous &amp;#x21D2;&lt;/a&gt;
+    &lt;header class="home"&gt;&lt;a href="/"&gt;MikeCoats.com&lt;/a&gt;&lt;/header&gt;
+  &lt;/nav&gt;
+  &lt;article&gt;
+    &lt;h1 id="fork-your-own-repo-on-github"&gt;Fork Your Own Repo on GitHub&lt;/h1&gt;
+&lt;p&gt;A common time-saving &amp;#39;hack&amp;#39; of mine when building &amp;#39;new-but-related-to-old&amp;#39; projects is to fork an existing code base and use it as the boot-strap for the new project. GitHub, however, does not provide the functionality on their website to fork your own project; you can only fork other people&amp;#39;s projects. Here&amp;#39;s how to work around that.&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Create the &lt;a href="https://github.com/new"&gt;new destination project on GitHub&lt;/a&gt;.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;&lt;img src="new-repo.png" alt="Create a new repository"&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Create a new directory on your local computer to hold the new repository.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;pre&gt;&lt;code class="hljs bash"&gt;~$ mkdir &lt;span class="hljs-built_in"&gt;test&lt;/span&gt;-project-2
+
+~$ &lt;span class="hljs-built_in"&gt;cd&lt;/span&gt; &lt;span class="hljs-built_in"&gt;test&lt;/span&gt;-project-2
+
+~/&lt;span class="hljs-built_in"&gt;test&lt;/span&gt;-project-2$ git init .
+Initialized empty Git repository &lt;span class="hljs-keyword"&gt;in&lt;/span&gt; /home/mike/&lt;span class="hljs-built_in"&gt;test&lt;/span&gt;-project-2/.git/&lt;/code&gt;&lt;/pre&gt;
+
+&lt;ul&gt;
+&lt;li&gt;Add the new project as the origin remote and the old project as the upstream remote.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;pre&gt;&lt;code class="hljs bash"&gt;~/&lt;span class="hljs-built_in"&gt;test&lt;/span&gt;-project-2$ git remote add origin https://github.com/MikeCoats/&lt;span class="hljs-built_in"&gt;test&lt;/span&gt;-project-2.git
+
+~/&lt;span class="hljs-built_in"&gt;test&lt;/span&gt;-project-2$ git remote add upstream https://github.com/MikeCoats/&lt;span class="hljs-built_in"&gt;test&lt;/span&gt;-project-1.git&lt;/code&gt;&lt;/pre&gt;
+
+&lt;ul&gt;
+&lt;li&gt;Pull the code from the upstream project and push it to the origin project.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;pre&gt;&lt;code class="hljs bash"&gt;~/&lt;span class="hljs-built_in"&gt;test&lt;/span&gt;-project-2 $ git pull upstream master
+remote: Enumerating objects: 3, done.remote: Counting objects: 100% (3/3), &lt;span class="hljs-keyword"&gt;done&lt;/span&gt;.
+remote: Total 3 (delta 0), reused 3 (delta 0), pack-reused 0
+Unpacking objects: 100% (3/3), &lt;span class="hljs-keyword"&gt;done&lt;/span&gt;.
+From https://github.com/MikeCoats/&lt;span class="hljs-built_in"&gt;test&lt;/span&gt;-project-1
+ * branch            master     -&amp;gt; FETCH_HEAD
+ * [new branch]      master     -&amp;gt; upstream/master
+
+~/&lt;span class="hljs-built_in"&gt;test&lt;/span&gt;-project-2 $ git push origin master
+Enumerating objects: 3, &lt;span class="hljs-keyword"&gt;done&lt;/span&gt;.
+Counting objects: 100% (3/3), &lt;span class="hljs-keyword"&gt;done&lt;/span&gt;.
+Writing objects: 100% (3/3), 881 bytes | 881.00 KiB/s, &lt;span class="hljs-keyword"&gt;done&lt;/span&gt;.
+Total 3 (delta 0), reused 0 (delta 0)
+To https://github.com/MikeCoats/&lt;span class="hljs-built_in"&gt;test&lt;/span&gt;-project-2.git
+ * [new branch]      master -&amp;gt; master&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;Congratulations! You&amp;#39;ve successfuly forked your own repo on GitHub!&lt;/p&gt;
+&lt;h2 id="discussion"&gt;Discussion&lt;/h2&gt;
+&lt;p&gt;If you want to leave a comment or discuss this post, please reply to my tweet below!&lt;/p&gt;
+&lt;p&gt;&lt;a href="https://twitter.com/MikeCoatsDotCom/status/882360457864065024"&gt;@MikeCoatsDotCom/882360457864065024&lt;/a&gt;&lt;/p&gt;
+
+  &lt;/article&gt;
+  &lt;nav&gt;
+    &lt;a class="next" href="/trump-is-big-boss" title="Trump is Big Boss"&gt;&amp;#x21D0; Next&lt;/a&gt;
+    &lt;a class="previous" href="/jeremy-kylebot" title="Jeremy Kylebot"&gt;Previous &amp;#x21D2;&lt;/a&gt;
+    &lt;a class="home" href="/"&gt;Home&lt;/a&gt;
+  &lt;/nav&gt;
+&lt;/body&gt;
+
+&lt;/html&gt;
+</content>
+  </entry>
+  <entry>
+    <title>Jeremy Kylebot</title>
+    <updated>2017-06-27T00:00:00.000Z</updated>
+    <content>&lt;!doctype html&gt;
+&lt;html&gt;
+
+&lt;head&gt;
+  &lt;title&gt;Jeremy Kylebot&lt;/title&gt;
+  &lt;style&gt;
+      html {
+          font-size: 19px;
+          line-height: 32px;
+          font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+          background: #f8f8f8;
+          color: #444;
+      }
+  
+      article, nav {
+          max-width: 60ch;
+          margin-left: auto;
+          margin-right: auto;
+          text-align: justify;
+          hyphens: auto;
+      }
+  
+      nav {
+          display: grid;
+          grid-template-columns: 1fr 1fr 1fr;
+      }
+      .next {
+          grid-column: 1;
+          grid-row: 1;
+          text-align: left;
+      }
+      .home {
+          grid-column: 2;
+          grid-row: 1;
+          text-align: center;
+      }
+      .previous {
+          grid-column: 3;
+          grid-row: 1;
+          text-align: right;
+      }
+  
+      h1,
+      h2,
+      h3 {
+          font-variant-caps: small-caps;
+      }
+  
+      h1 {
+          font-size: 2rem;
+          line-height: 3.08rem;
+      }
+  
+      h2 {
+          font-size: 1.5rem;
+          line-height: 2.31rem;
+      }
+  
+      h3 {
+          font-size: 1.25rem;
+          line-height: 1.925rem;
+      }
+  
+      pre&gt;code {
+          font-size: 0.9rem;
+      }
+  
+      pre {
+          padding:0.75rem;
+      }
+  
+      img,
+      table,
+      pre {
+          background: white;
+          border: 1px solid black;
+      }
+  
+      @media (max-width: 109.99ch) {
+  
+          img,
+          table,
+          pre {
+              max-width: 100%;
+          }
+      }
+  
+      @media (min-width: 110ch) {
+  
+          img,
+          table,
+          pre {
+              margin-left: -10ch;
+              width: 80ch;
+          }
+      }
+  &lt;/style&gt;
+  &lt;link rel="stylesheet" href="/css/highlight.min.css"&gt;
+  &lt;link rel="alternate" type="application/atom+xml" href="/feed/atom/index.xml" /&gt;
+&lt;/head&gt;
+
+&lt;body&gt;
+  &lt;nav&gt;
+    &lt;a class="next" href="/fork-your-own-repo" title="Fork Your Own Repo"&gt;&amp;#x21D0; Next&lt;/a&gt;
+    &lt;a class="previous" href="/intruder-alert" title="Intruder Alert"&gt;Previous &amp;#x21D2;&lt;/a&gt;
+    &lt;header class="home"&gt;&lt;a href="/"&gt;MikeCoats.com&lt;/a&gt;&lt;/header&gt;
+  &lt;/nav&gt;
+  &lt;article&gt;
+    &lt;h1 id="jeremy-kylebot"&gt;Jeremy Kylebot&lt;/h1&gt;
+&lt;p&gt;tl;dr Jeremy Kylebot is a silly little program that randomly generates title cards in the style of The Jeremy Kyle Show and posts them to Twitter.&lt;/p&gt;
+&lt;p&gt;&lt;img src="screenshot.png" alt="Your Mum-in-Law Stole Their Kettle"&gt;&lt;/p&gt;
+&lt;p&gt;The source code for the bot is &lt;a href="https://github.com/MikeCoats/kyle-bot"&gt;shared as a project on GitHub&lt;/a&gt;, and the resulting tweets are &lt;a href="https://twitter.com/JeremyKylebot"&gt;posted to the parody account here&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;I&amp;#39;ve tried to make the format of the show titles match the look-and-feel of genuine episodes, while at the same time I&amp;#39;ve made the subject of the titles as ludicrously &amp;quot;British&amp;quot; as possible. &lt;/p&gt;
+&lt;h2 id="examples"&gt;Examples&lt;/h2&gt;
+&lt;p&gt;&lt;a href="https://twitter.com/JeremyKylebot/status/1067478171623276544"&gt;@JeremyKylebot/1067478171623276544&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href="https://twitter.com/JeremyKylebot/status/1067689561445318656"&gt;@JeremyKylebot/1067689561445318656&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href="https://twitter.com/JeremyKylebot/status/1067749959817150465"&gt;@JeremyKylebot/1067749959817150465&lt;/a&gt;&lt;/p&gt;
+
+  &lt;/article&gt;
+  &lt;nav&gt;
+    &lt;a class="next" href="/fork-your-own-repo" title="Fork Your Own Repo"&gt;&amp;#x21D0; Next&lt;/a&gt;
+    &lt;a class="previous" href="/intruder-alert" title="Intruder Alert"&gt;Previous &amp;#x21D2;&lt;/a&gt;
+    &lt;a class="home" href="/"&gt;Home&lt;/a&gt;
+  &lt;/nav&gt;
+&lt;/body&gt;
+
+&lt;/html&gt;
+</content>
+  </entry>
+  <entry>
+    <title>Intruder Alert</title>
+    <updated>2013-09-05T00:00:00.000Z</updated>
+    <content>&lt;!doctype html&gt;
+&lt;html&gt;
+
+&lt;head&gt;
+  &lt;title&gt;Intruder Alert&lt;/title&gt;
+  &lt;style&gt;
+      html {
+          font-size: 19px;
+          line-height: 32px;
+          font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+          background: #f8f8f8;
+          color: #444;
+      }
+  
+      article, nav {
+          max-width: 60ch;
+          margin-left: auto;
+          margin-right: auto;
+          text-align: justify;
+          hyphens: auto;
+      }
+  
+      nav {
+          display: grid;
+          grid-template-columns: 1fr 1fr 1fr;
+      }
+      .next {
+          grid-column: 1;
+          grid-row: 1;
+          text-align: left;
+      }
+      .home {
+          grid-column: 2;
+          grid-row: 1;
+          text-align: center;
+      }
+      .previous {
+          grid-column: 3;
+          grid-row: 1;
+          text-align: right;
+      }
+  
+      h1,
+      h2,
+      h3 {
+          font-variant-caps: small-caps;
+      }
+  
+      h1 {
+          font-size: 2rem;
+          line-height: 3.08rem;
+      }
+  
+      h2 {
+          font-size: 1.5rem;
+          line-height: 2.31rem;
+      }
+  
+      h3 {
+          font-size: 1.25rem;
+          line-height: 1.925rem;
+      }
+  
+      pre&gt;code {
+          font-size: 0.9rem;
+      }
+  
+      pre {
+          padding:0.75rem;
+      }
+  
+      img,
+      table,
+      pre {
+          background: white;
+          border: 1px solid black;
+      }
+  
+      @media (max-width: 109.99ch) {
+  
+          img,
+          table,
+          pre {
+              max-width: 100%;
+          }
+      }
+  
+      @media (min-width: 110ch) {
+  
+          img,
+          table,
+          pre {
+              margin-left: -10ch;
+              width: 80ch;
+          }
+      }
+  &lt;/style&gt;
+  &lt;link rel="stylesheet" href="/css/highlight.min.css"&gt;
+  &lt;link rel="alternate" type="application/atom+xml" href="/feed/atom/index.xml" /&gt;
+&lt;/head&gt;
+
+&lt;body&gt;
+  &lt;nav&gt;
+    &lt;a class="next" href="/jeremy-kylebot" title="Jeremy Kylebot"&gt;&amp;#x21D0; Next&lt;/a&gt;
+    &lt;header class="home"&gt;&lt;a href="/"&gt;MikeCoats.com&lt;/a&gt;&lt;/header&gt;
+  &lt;/nav&gt;
+  &lt;article&gt;
+    &lt;h1 id="intruder-alert"&gt;Intruder Alert&lt;/h1&gt;
+&lt;p&gt;For a quick lunch-time electronics project, I’ve constructed an intruder alarm that can alert you any time somebody comes too close to your desk or cubicle. This project took me 45 minutes from start to finish including all coding, wiring and testing so—provided you’ve already got your lunch and eat it quickly—you too can be alerted to approaching co-workers before your lunch hour is up.&lt;/p&gt;
+&lt;p&gt;&lt;img src="photo.jpg" alt="Photograph of completed Intruder Alert project"&gt;&lt;/p&gt;
+&lt;p&gt;Using an Arduino for this project is overkill, as we could easily accomplish the same result without using a micro-controller at all, but it is a good introduction to using analogue electronics with the board.&lt;/p&gt;
+&lt;p&gt;In this project I’ve connected an ultrasonic range finder, a potentiometer and an LED to an Arduino to form a basic intruder alarm. The potentiometer acts as a threshold so you can easily tune the performance of the ultrasonic range finder to your local environment.&lt;/p&gt;
+&lt;p&gt;Very simply, every time the value from the ultrasonic range finder drops below the potentiometer’s threshold value, an alarm is triggered. In this case the alarm is an LED, but it could easily—if you wanted to annoy your cubicle neighbours—be something like a buzzer. If your Arduino is connected to a PC, you can also use the serial monitor to read the debug information of the two analogue devices.&lt;/p&gt;
+&lt;p&gt;This isn’t really a tutorial on how to use an Arduino but more of an example of what can be quickly accomplished by connecting a few simple components together and throwing a wee bit of code at a problem. If you want to build your own—or just look closer at how I built mine—keep reading for a BOM,  Source Code and Schematic.&lt;/p&gt;
+&lt;h2 id="bill-of-materials"&gt;Bill of Materials&lt;/h2&gt;
+&lt;table&gt;
+&lt;thead&gt;
+&lt;tr&gt;
+&lt;th&gt;Qty&lt;/th&gt;
+&lt;th&gt;Item&lt;/th&gt;
+&lt;th&gt;Source&lt;/th&gt;
+&lt;th&gt;Cost&lt;/th&gt;
+&lt;/tr&gt;
+&lt;/thead&gt;
+&lt;tbody&gt;&lt;tr&gt;
+&lt;td&gt;1 no.&lt;/td&gt;
+&lt;td&gt;Arduino Uno - R3&lt;/td&gt;
+&lt;td&gt;CoolComponents&lt;/td&gt;
+&lt;td&gt;£19.98&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;1 no.&lt;/td&gt;
+&lt;td&gt;Ultrasonic Range Finder&lt;/td&gt;
+&lt;td&gt;CoolComponents&lt;/td&gt;
+&lt;td&gt;£24.48&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;1 no.&lt;/td&gt;
+&lt;td&gt;10 kΩ Linear Pot&lt;/td&gt;
+&lt;td&gt;CoolComponents&lt;/td&gt;
+&lt;td&gt;£ 1.44&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;1 no.&lt;/td&gt;
+&lt;td&gt;5mm Red LED&lt;/td&gt;
+&lt;td&gt;CoolComponents&lt;/td&gt;
+&lt;td&gt;£ 0.40&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;1 no.&lt;/td&gt;
+&lt;td&gt;220Ω Resistor&lt;/td&gt;
+&lt;td&gt;CoolComponents&lt;/td&gt;
+&lt;td&gt;£ 0.06&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;12 no.&lt;/td&gt;
+&lt;td&gt;Jumper Wires&lt;/td&gt;
+&lt;td&gt;CoolComponents&lt;/td&gt;
+&lt;td&gt;£ 3.59&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;2 no.&lt;/td&gt;
+&lt;td&gt;Mini Bread-board&lt;/td&gt;
+&lt;td&gt;CoolComponents&lt;/td&gt;
+&lt;td&gt;£ 1.44&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;&lt;/table&gt;
+&lt;h2 id="arduino-sketch-source-code"&gt;Arduino Sketch Source Code&lt;/h2&gt;
+&lt;pre&gt;&lt;code class="hljs c++"&gt;&lt;span class="hljs-comment"&gt;/*
+IntruderAlert
+
+Intruders better beware!
+
+Every time the value from the ultrasonic range finder drops below the
+potentiometer's threshold value, an alarm is triggered. In this case the alarm
+is an LED, but it could easily be a buzzer. If your Arduino is connected to a
+PC then you can also use the serial monitor to read the debug information of
+the two analogue devices.
+
+This work is licensed under the Creative Commons Attribution-ShareAlike 2.5 UK:
+Scotland License. To view a copy of this license, visit
+http://creativecommons.org/licenses/by-sa/2.5/scotland/ or send a letter to
+Creative Commons, 444 Castro Street, Suite 900, Mountain View, California,
+94041, USA.
+
+Copyright 2013, Mike Coats
+http://mikecoats.com/IntruderAlert/
+i.am@mikecoats.com
+*/&lt;/span&gt;
+
+&lt;span class="hljs-keyword"&gt;int&lt;/span&gt; LedPin = &lt;span class="hljs-number"&gt;8&lt;/span&gt;;
+
+&lt;span class="hljs-function"&gt;&lt;span class="hljs-keyword"&gt;void&lt;/span&gt; &lt;span class="hljs-title"&gt;setup&lt;/span&gt;&lt;span class="hljs-params"&gt;()&lt;/span&gt; &lt;/span&gt;{
+  &lt;span class="hljs-comment"&gt;// Initialise the serial port for debugging.&lt;/span&gt;
+  Serial.begin(&lt;span class="hljs-number"&gt;9600&lt;/span&gt;);
+
+  &lt;span class="hljs-comment"&gt;// Set up the "alarm" pin.&lt;/span&gt;
+  pinMode(LedPin,OUTPUT);
+}
+
+&lt;span class="hljs-function"&gt;&lt;span class="hljs-keyword"&gt;void&lt;/span&gt; &lt;span class="hljs-title"&gt;loop&lt;/span&gt;&lt;span class="hljs-params"&gt;()&lt;/span&gt; &lt;/span&gt;{
+  &lt;span class="hljs-comment"&gt;// Grab the value from the ultrasonic range finder.&lt;/span&gt;
+  &lt;span class="hljs-keyword"&gt;int&lt;/span&gt; sonarValue = analogRead(A0);
+
+  &lt;span class="hljs-comment"&gt;// Grab the value from the calibraiton potentiometer.&lt;/span&gt;
+  &lt;span class="hljs-keyword"&gt;int&lt;/span&gt; resValue = analogRead(A1);
+
+  &lt;span class="hljs-comment"&gt;// Output the debugging message.&lt;/span&gt;
+  Serial.print(sonarValue);
+  Serial.print(&lt;span class="hljs-string"&gt;" - "&lt;/span&gt;);
+  Serial.println(resValue);
+
+  &lt;span class="hljs-comment"&gt;// If the sensor's value indicates that an object is "closer" than the&lt;/span&gt;
+  &lt;span class="hljs-comment"&gt;//calibration threshold.&lt;/span&gt;
+  &lt;span class="hljs-keyword"&gt;if&lt;/span&gt;(sonarValue &amp;lt; resValue)
+  {
+    &lt;span class="hljs-comment"&gt;// Turn the "alarm" to on.&lt;/span&gt;
+    digitalWrite(LedPin,HIGH);
+  }
+  &lt;span class="hljs-keyword"&gt;else&lt;/span&gt;
+  {
+    &lt;span class="hljs-comment"&gt;// Turn off the "alarm".&lt;/span&gt;
+    digitalWrite(LedPin,LOW);
+  }
+
+  &lt;span class="hljs-comment"&gt;// Hang on for a bit, running the whole loop 8 times a second.&lt;/span&gt;
+  delay(&lt;span class="hljs-number"&gt;125&lt;/span&gt;);
+}&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;&lt;a href="https://gist.github.com/MikeCoats/df5969b87f739aaefda892576a22bb75"&gt;https://gist.github.com/MikeCoats/df5969b87f739aaefda892576a22bb75&lt;/a&gt;&lt;/p&gt;
+&lt;h2 id="fritzing-schematic"&gt;Fritzing Schematic&lt;/h2&gt;
+&lt;p&gt;&lt;img src="fritzing.png" alt="Fritzing Schematic of Intruder Alert"&gt;&lt;/p&gt;
+
+  &lt;/article&gt;
+  &lt;nav&gt;
+    &lt;a class="next" href="/jeremy-kylebot" title="Jeremy Kylebot"&gt;&amp;#x21D0; Next&lt;/a&gt;
+    &lt;a class="home" href="/"&gt;Home&lt;/a&gt;
+  &lt;/nav&gt;
+&lt;/body&gt;
+
+&lt;/html&gt;
+</content>
+  </entry>
+</feed>
